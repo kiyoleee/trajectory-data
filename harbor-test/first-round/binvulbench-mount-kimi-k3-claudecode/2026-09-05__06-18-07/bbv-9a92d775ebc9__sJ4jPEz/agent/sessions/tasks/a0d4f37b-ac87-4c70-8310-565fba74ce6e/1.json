@@ -1,0 +1,9 @@
+{
+  "id": "1",
+  "subject": "Write /workspace/out/poc.py per spec",
+  "description": "Single-file stdlib Python script: loopback HTTP server, temp .netrc, run curl with -L/--resolve/--netrc-file, emit normalized JSON transcript.",
+  "activeForm": "Writing poc.py",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

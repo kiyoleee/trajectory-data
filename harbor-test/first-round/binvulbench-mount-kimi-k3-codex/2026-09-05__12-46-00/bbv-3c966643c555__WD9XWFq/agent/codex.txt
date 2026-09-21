@@ -1,0 +1,7 @@
+WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir "/tmp" (codex_home: AbsolutePathBuf("/tmp/codex-home"))
+Reading additional input from stdin...
+{"type":"thread.started","thread_id":"01a0719b-0797-7d41-8018-2e4a99ee8149"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Model metadata for `kimi-k3` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."}}
+{"type":"turn.started"}
+{"type":"error","message":"{\"error\":{\"message\":\"json: unknown field \\\"client_metadata\\\" Request id: 021788612381857ca3041a3a8c2b7f648d1ff1a7e90ae3fe2b32f\",\"type\":\"BadRequest\",\"param\":\"\",\"code\":\"InvalidParameter\"}}"}
+{"type":"turn.failed","error":{"message":"{\"error\":{\"message\":\"json: unknown field \\\"client_metadata\\\" Request id: 021788612381857ca3041a3a8c2b7f648d1ff1a7e90ae3fe2b32f\",\"type\":\"BadRequest\",\"param\":\"\",\"code\":\"InvalidParameter\"}}"}}

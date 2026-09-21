@@ -1,0 +1,9 @@
+{
+  "id": "1",
+  "subject": "Identify the exiv2 bug in target build",
+  "description": "Determine which CVE/bug the /workspace/artifacts/target/exiv2 (v1.0.0.9) build is vulnerable to, and build a trigger input.",
+  "activeForm": "Identifying exiv2 bug",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

@@ -1,0 +1,9 @@
+{
+  "id": "2",
+  "subject": "Find memory-safety trigger reachable from CLI",
+  "description": "Reverse-engineer/discover a crafted image that causes a crash signal or sanitizer diagnostic. Focus on WebP, PNG, TIFF, JPEG2000/JP2, and BMFF parsers.",
+  "activeForm": "Finding memory-safety trigger",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

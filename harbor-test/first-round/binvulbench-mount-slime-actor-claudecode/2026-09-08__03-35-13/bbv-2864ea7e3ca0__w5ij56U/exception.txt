@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/home/liqingyu/harbor-work/.venv/lib/python3.12/site-packages/harbor/trial/single_step.py", line 77, in _run_agent
+    await self._run_agent_phase(
+  File "/home/liqingyu/harbor-work/.venv/lib/python3.12/site-packages/harbor/trial/trial.py", line 545, in _run_agent_phase
+    await asyncio.wait_for(
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/liqingyu/harbor-work/.venv/lib/python3.12/site-packages/harbor/agents/installed/base.py", line 179, in wrapper
+    return await fn(self, instruction, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liqingyu/harbor-work/.venv/lib/python3.12/site-packages/harbor/agents/installed/claude_code.py", line 1891, in run
+    await self.exec_as_agent(
+  File "/home/liqingyu/harbor-work/.venv/lib/python3.12/site-packages/harbor/agents/installed/base.py", line 898, in exec_as_agent
+    return await self._exec(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/liqingyu/harbor-work/.venv/lib/python3.12/site-packages/harbor/agents/installed/base.py", line 865, in _exec
+    raise self._classify_exec_error(command, result)
+harbor.agents.installed.base.UnknownApiError: Command failed (exit 1): export PATH="$HOME/.local/bin:$PATH"; harbor_claude_code_instruction_c54c4a3f9158475091ff290d90b5abc8="$HARBOR_CLAUDE_CODE_INSTRUCTION_C54C4A3F9158475091FF290D90B5ABC8"; unset HARBOR_CLAUDE_CODE_INSTRUCTION_C54C4A3F9158475091FF290D90B5ABC8; printf "%s" "$harbor_claude_code_instruction_c54c4a3f9158475091ff290d90b5abc8" | claude --verbose --output-format=stream-json --permission-mode=bypassPermissions --print 2>&1 | tee /logs/agent/claude-code.txt
+stdout: {"type":"system","subtype":"init","cwd":"/workspace","session_id":"8d175728-5dca-4060-9b62-413561412cb5","tools":["Task","Bash","CronCreate","CronDelete","CronList","Edit","EnterWorktree","ExitWorktree","ListAgents","NotebookEdit","Read","ReportFindi ... [2952 chars truncated] ... 1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{},"permission_denials":[],"terminal_reason":"api_error","fast_mode_state":"off","fast_mode_disabled_reason":"sdk_opt_in_required","subagent_stats":{"spawned":0,"requested":{"background":0,"foreground":0,"unset":0},"started_in_background":0,"max_depth":0,"spawned_by_subagents":0,"completed":0,"failed":0,"killed":{"parent":0,"user":0,"system":0},"refused":{"depth_limit":0,"concurrency_limit":0,"budget":0},"by_type":{}},"is_error":true,"num_turns":1,"subtype":"success","api_error_status":null,"result":"API Error: Invalid URL","type":"result","duration_ms":58,"uuid":"ac9ce1a4-03b2-4d19-9ef5-23dbede11079","queued_turn_count":0}
+
+stderr: None

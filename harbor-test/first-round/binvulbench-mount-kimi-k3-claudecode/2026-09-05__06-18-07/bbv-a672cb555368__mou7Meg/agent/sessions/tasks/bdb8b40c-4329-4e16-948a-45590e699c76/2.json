@@ -1,0 +1,9 @@
+{
+  "id": "2",
+  "subject": "Identify crashing L2TP input and craft payload",
+  "description": "Research CVE-2025-50495 (accel-ppp 1.12.0-92 l2tp send_sccrq/scccn heap overflow), craft deterministic single UDP packet to 127.0.0.1:1701 that crashes daemon.",
+  "activeForm": "Identifying crashing input",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

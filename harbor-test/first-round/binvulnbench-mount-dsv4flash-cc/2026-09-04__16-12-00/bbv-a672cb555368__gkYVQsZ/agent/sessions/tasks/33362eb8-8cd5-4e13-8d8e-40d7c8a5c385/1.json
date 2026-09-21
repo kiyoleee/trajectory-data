@@ -1,0 +1,9 @@
+{
+  "id": "1",
+  "subject": "Create stub libraries for missing dependencies",
+  "description": "Create stub shared libraries for libtriton.so and libpcre.so.3 so the binary can start",
+  "activeForm": "Creating stub libraries",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

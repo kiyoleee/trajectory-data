@@ -1,0 +1,71 @@
+{
+    "id": "d5dd8aa9-c7cf-426b-b79e-24895d393414",
+    "started_at": "2026-09-05T06:18:54.388260",
+    "updated_at": "2026-09-05T06:24:02.477054",
+    "finished_at": "2026-09-05T06:24:02.477054",
+    "n_total_trials": 14,
+    "stats": {
+        "n_completed_trials": 14,
+        "n_errored_trials": 14,
+        "n_running_trials": 0,
+        "n_pending_trials": 0,
+        "n_cancelled_trials": 0,
+        "n_retries": 0,
+        "evals": {
+            "codex__kimi-k3__binvulnbench-mount": {
+                "n_trials": 14,
+                "n_errors": 14,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "pass_at_k": {},
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "bbv-ea68f1e9b74b__trroFT9",
+                            "bbv-3c966643c555__2o2WzHD",
+                            "bbv-d3e9a641b34a__AjnHgii",
+                            "bbv-5033fb06cd38__8BKw98L",
+                            "bbv-22c3fb03220a__9enQsk9",
+                            "bbv-2864ea7e3ca0__nw7yoLQ",
+                            "bbv-1b6def6e7591__eK4LkZN",
+                            "bbv-9a92d775ebc9__q9gLsro",
+                            "bbv-6139d54a67d5__c4nSTjJ",
+                            "bbv-a672cb555368__JW8tufe",
+                            "bbv-2ec5413a2b8e__b2qmHgA",
+                            "bbv-f050dfd3a6c5__enhMTsK",
+                            "bbv-8b80fe07a925__e69V9Bz",
+                            "bbv-58ba19a72015__MotgbkY"
+                        ]
+                    }
+                },
+                "exception_stats": {
+                    "ApiRateLimitError": [
+                        "bbv-ea68f1e9b74b__trroFT9",
+                        "bbv-3c966643c555__2o2WzHD",
+                        "bbv-d3e9a641b34a__AjnHgii",
+                        "bbv-5033fb06cd38__8BKw98L",
+                        "bbv-1b6def6e7591__eK4LkZN",
+                        "bbv-9a92d775ebc9__q9gLsro",
+                        "bbv-6139d54a67d5__c4nSTjJ",
+                        "bbv-a672cb555368__JW8tufe",
+                        "bbv-2ec5413a2b8e__b2qmHgA",
+                        "bbv-f050dfd3a6c5__enhMTsK",
+                        "bbv-8b80fe07a925__e69V9Bz",
+                        "bbv-58ba19a72015__MotgbkY"
+                    ],
+                    "NonZeroAgentExitCodeError": [
+                        "bbv-22c3fb03220a__9enQsk9",
+                        "bbv-2864ea7e3ca0__nw7yoLQ"
+                    ]
+                }
+            }
+        },
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null
+    }
+}

@@ -1,0 +1,230 @@
+{
+  "passed": true,
+  "sample_root": "/tests/private-sample",
+  "poc": "/workspace/out/poc.py",
+  "repetitions": 1,
+  "runs": {
+    "vuln/unstripped": [
+      {
+        "binary": "/tests/private-sample/artifacts/vuln/unstripped/curl",
+        "repetition": 1,
+        "passed": true,
+        "issues": [],
+        "result": {
+          "binary": "/tests/private-sample/artifacts/vuln/unstripped/curl",
+          "command": [
+            "/tests/private-sample/artifacts/vuln/unstripped/curl",
+            "-L",
+            "--max-redirs",
+            "3",
+            "--resolve",
+            "a.localhost:37503:127.0.0.1",
+            "--resolve",
+            "b.localhost:37503:127.0.0.1",
+            "--netrc-file",
+            "/tmp/poc-netrc-d79p9q7e/.netrc",
+            "http://a.localhost:37503/"
+          ],
+          "returncode": 0,
+          "signal": null,
+          "timed_out": false,
+          "runtime_ms": 3,
+          "stdout": "OK",
+          "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n\r100     2  100     2    0     0   1333      0 --:--:-- --:--:-- --:--:--  1333\n",
+          "observable": {
+            "kind": "protocol_transcript",
+            "value": "REQ 1 host=a.localhost:37503 auth=Basic YWxpY2U6c2VjcmV0cHc=\nREQ 2 host=b.localhost:37503 auth=Basic YWxpY2U6c2VjcmV0cHc=\n",
+            "path": null
+          },
+          "error": null
+        },
+        "leaked": true
+      }
+    ],
+    "vuln/stripped": [
+      {
+        "binary": "/tests/private-sample/artifacts/vuln/stripped/curl",
+        "repetition": 1,
+        "passed": true,
+        "issues": [],
+        "result": {
+          "binary": "/tests/private-sample/artifacts/vuln/stripped/curl",
+          "command": [
+            "/tests/private-sample/artifacts/vuln/stripped/curl",
+            "-L",
+            "--max-redirs",
+            "3",
+            "--resolve",
+            "a.localhost:38183:127.0.0.1",
+            "--resolve",
+            "b.localhost:38183:127.0.0.1",
+            "--netrc-file",
+            "/tmp/poc-netrc-dgo3skdu/.netrc",
+            "http://a.localhost:38183/"
+          ],
+          "returncode": 0,
+          "signal": null,
+          "timed_out": false,
+          "runtime_ms": 3,
+          "stdout": "OK",
+          "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n\r100     2  100     2    0     0   1310      0 --:--:-- --:--:-- --:--:--  1310\n",
+          "observable": {
+            "kind": "protocol_transcript",
+            "value": "REQ 1 host=a.localhost:38183 auth=Basic YWxpY2U6c2VjcmV0cHc=\nREQ 2 host=b.localhost:38183 auth=Basic YWxpY2U6c2VjcmV0cHc=\n",
+            "path": null
+          },
+          "error": null
+        },
+        "leaked": true
+      }
+    ],
+    "vuln/sanitized": [
+      {
+        "binary": "/tests/private-sample/artifacts/vuln/sanitized/curl",
+        "repetition": 1,
+        "passed": true,
+        "issues": [],
+        "result": {
+          "binary": "/tests/private-sample/artifacts/vuln/sanitized/curl",
+          "command": [
+            "/tests/private-sample/artifacts/vuln/sanitized/curl",
+            "-L",
+            "--max-redirs",
+            "3",
+            "--resolve",
+            "a.localhost:33231:127.0.0.1",
+            "--resolve",
+            "b.localhost:33231:127.0.0.1",
+            "--netrc-file",
+            "/tmp/poc-netrc-mgl2zlpx/.netrc",
+            "http://a.localhost:33231/"
+          ],
+          "returncode": 0,
+          "signal": null,
+          "timed_out": false,
+          "runtime_ms": 15,
+          "stdout": "OK",
+          "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n\r100     2  100     2    0     0    900      0 --:--:-- --:--:-- --:--:--   900\n",
+          "observable": {
+            "kind": "protocol_transcript",
+            "value": "REQ 1 host=a.localhost:33231 auth=Basic YWxpY2U6c2VjcmV0cHc=\nREQ 2 host=b.localhost:33231 auth=Basic YWxpY2U6c2VjcmV0cHc=\n",
+            "path": null
+          },
+          "error": null
+        },
+        "leaked": true
+      }
+    ],
+    "patched/unstripped": [
+      {
+        "binary": "/tests/private-sample/artifacts/patched/unstripped/curl",
+        "repetition": 1,
+        "passed": true,
+        "issues": [],
+        "result": {
+          "binary": "/tests/private-sample/artifacts/patched/unstripped/curl",
+          "command": [
+            "/tests/private-sample/artifacts/patched/unstripped/curl",
+            "-L",
+            "--max-redirs",
+            "3",
+            "--resolve",
+            "a.localhost:44923:127.0.0.1",
+            "--resolve",
+            "b.localhost:44923:127.0.0.1",
+            "--netrc-file",
+            "/tmp/poc-netrc-optyi6h8/.netrc",
+            "http://a.localhost:44923/"
+          ],
+          "returncode": 0,
+          "signal": null,
+          "timed_out": false,
+          "runtime_ms": 3,
+          "stdout": "OK",
+          "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n\r100     2  100     2    0     0   1184      0 --:--:-- --:--:-- --:--:--  1184\n",
+          "observable": {
+            "kind": "protocol_transcript",
+            "value": "REQ 1 host=a.localhost:44923 auth=Basic YWxpY2U6c2VjcmV0cHc=\nREQ 2 host=b.localhost:44923 auth=none\n",
+            "path": null
+          },
+          "error": null
+        },
+        "leaked": false
+      }
+    ],
+    "patched/stripped": [
+      {
+        "binary": "/tests/private-sample/artifacts/patched/stripped/curl",
+        "repetition": 1,
+        "passed": true,
+        "issues": [],
+        "result": {
+          "binary": "/tests/private-sample/artifacts/patched/stripped/curl",
+          "command": [
+            "/tests/private-sample/artifacts/patched/stripped/curl",
+            "-L",
+            "--max-redirs",
+            "3",
+            "--resolve",
+            "a.localhost:42857:127.0.0.1",
+            "--resolve",
+            "b.localhost:42857:127.0.0.1",
+            "--netrc-file",
+            "/tmp/poc-netrc-yyimzj66/.netrc",
+            "http://a.localhost:42857/"
+          ],
+          "returncode": 0,
+          "signal": null,
+          "timed_out": false,
+          "runtime_ms": 2,
+          "stdout": "OK",
+          "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n\r100     2  100     2    0     0   1393      0 --:--:-- --:--:-- --:--:--  1393\n",
+          "observable": {
+            "kind": "protocol_transcript",
+            "value": "REQ 1 host=a.localhost:42857 auth=Basic YWxpY2U6c2VjcmV0cHc=\nREQ 2 host=b.localhost:42857 auth=none\n",
+            "path": null
+          },
+          "error": null
+        },
+        "leaked": false
+      }
+    ],
+    "patched/sanitized": [
+      {
+        "binary": "/tests/private-sample/artifacts/patched/sanitized/curl",
+        "repetition": 1,
+        "passed": true,
+        "issues": [],
+        "result": {
+          "binary": "/tests/private-sample/artifacts/patched/sanitized/curl",
+          "command": [
+            "/tests/private-sample/artifacts/patched/sanitized/curl",
+            "-L",
+            "--max-redirs",
+            "3",
+            "--resolve",
+            "a.localhost:36793:127.0.0.1",
+            "--resolve",
+            "b.localhost:36793:127.0.0.1",
+            "--netrc-file",
+            "/tmp/poc-netrc-14fn5fvw/.netrc",
+            "http://a.localhost:36793/"
+          ],
+          "returncode": 0,
+          "signal": null,
+          "timed_out": false,
+          "runtime_ms": 13,
+          "stdout": "OK",
+          "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n\r100     2  100     2    0     0    914      0 --:--:-- --:--:-- --:--:--   914\n",
+          "observable": {
+            "kind": "protocol_transcript",
+            "value": "REQ 1 host=a.localhost:36793 auth=Basic YWxpY2U6c2VjcmV0cHc=\nREQ 2 host=b.localhost:36793 auth=none\n",
+            "path": null
+          },
+          "error": null
+        },
+        "leaked": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "id": "3",
+  "subject": "Test and verify poc.py against the target binary",
+  "description": "Run poc.py against the target binary and verify JSON output contract",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

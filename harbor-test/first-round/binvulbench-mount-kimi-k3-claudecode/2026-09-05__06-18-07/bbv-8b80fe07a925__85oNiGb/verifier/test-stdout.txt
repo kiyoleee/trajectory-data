@@ -1,0 +1,105 @@
+{
+  "passed": false,
+  "sample_root": "/tests/private-sample",
+  "poc": "/workspace/out/poc.py",
+  "repetitions": 1,
+  "runs": {
+    "vuln/unstripped": [
+      {
+        "passed": true,
+        "binary": "/tests/private-sample/artifacts/vuln/unstripped/jasper",
+        "repetition": 1,
+        "issues": [],
+        "returncode": -11,
+        "signal": "SIGSEGV",
+        "timed_out": false,
+        "runtime_ms": 76,
+        "has_int_overflow": false,
+        "has_asan_error": false
+      }
+    ],
+    "vuln/stripped": [
+      {
+        "passed": true,
+        "binary": "/tests/private-sample/artifacts/vuln/stripped/jasper",
+        "repetition": 1,
+        "issues": [],
+        "returncode": -11,
+        "signal": "SIGSEGV",
+        "timed_out": false,
+        "runtime_ms": 75,
+        "has_int_overflow": false,
+        "has_asan_error": false
+      }
+    ],
+    "vuln/sanitized": [
+      {
+        "passed": false,
+        "binary": "/tests/private-sample/artifacts/vuln/sanitized/jasper",
+        "repetition": 1,
+        "issues": [
+          "vuln/sanitized: expected ASan/UBSan evidence but not found"
+        ],
+        "returncode": 1,
+        "signal": null,
+        "timed_out": false,
+        "runtime_ms": 17,
+        "has_int_overflow": false,
+        "has_asan_error": true
+      }
+    ],
+    "patched/unstripped": [
+      {
+        "passed": false,
+        "binary": "/tests/private-sample/artifacts/patched/unstripped/jasper",
+        "repetition": 1,
+        "issues": [
+          "patched/unstripped: unexpected crash signal SIGSEGV"
+        ],
+        "returncode": -11,
+        "signal": "SIGSEGV",
+        "timed_out": false,
+        "runtime_ms": 81,
+        "has_int_overflow": false,
+        "has_asan_error": false
+      }
+    ],
+    "patched/stripped": [
+      {
+        "passed": false,
+        "binary": "/tests/private-sample/artifacts/patched/stripped/jasper",
+        "repetition": 1,
+        "issues": [
+          "patched/stripped: unexpected crash signal SIGSEGV"
+        ],
+        "returncode": -11,
+        "signal": "SIGSEGV",
+        "timed_out": false,
+        "runtime_ms": 74,
+        "has_int_overflow": false,
+        "has_asan_error": false
+      }
+    ],
+    "patched/sanitized": [
+      {
+        "passed": true,
+        "binary": "/tests/private-sample/artifacts/patched/sanitized/jasper",
+        "repetition": 1,
+        "issues": [],
+        "returncode": 1,
+        "signal": null,
+        "timed_out": false,
+        "runtime_ms": 19,
+        "has_int_overflow": false,
+        "has_asan_error": true
+      }
+    ]
+  },
+  "issues": [
+    "vuln/sanitized rep1: vuln/sanitized: expected ASan/UBSan evidence but not found",
+    "patched/unstripped rep1: patched/unstripped: unexpected crash signal SIGSEGV",
+    "patched/stripped rep1: patched/stripped: unexpected crash signal SIGSEGV"
+  ],
+  "error": null
+}
+validator exited with status 1

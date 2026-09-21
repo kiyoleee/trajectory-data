@@ -1,0 +1,8 @@
+{
+  "id": "2",
+  "subject": "Write poc.py script",
+  "description": "Write the single-file Python script that drives the server over HTTP",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

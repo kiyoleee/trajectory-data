@@ -1,0 +1,178 @@
+{
+  "passed": true,
+  "sample_root": "/tests/private-sample",
+  "poc": "/workspace/out/poc.py",
+  "repetitions": 1,
+  "runs": {
+    "vuln/unstripped": [
+      {
+        "passed": true,
+        "binary": "/tests/private-sample/artifacts/vuln/unstripped/signalk-server",
+        "repetition": 1,
+        "issues": [],
+        "invocation": [
+          "/usr/bin/python3",
+          "/workspace/out/poc.py",
+          "--binary",
+          "/tests/private-sample/artifacts/vuln/unstripped/signalk-server",
+          "--timeout",
+          "30",
+          "--json-out",
+          "/tmp/tmph9psf62b.json"
+        ],
+        "poc_returncode": 0,
+        "poc_stdout_tail": "",
+        "poc_stderr_tail": "",
+        "observable_kind": "custom",
+        "triggered": true,
+        "config_replaced": true,
+        "import_http": 200,
+        "apply_http": 202,
+        "trace_excerpt": "s (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\n\u001b[0mGET / \u001b[36m302\u001b[0m 2.060 ms - 29\u001b[0m\n\u001b[0mGET /skServer/loginStatus \u001b[32m200\u001b[0m 1.807 ms - 168\u001b[0m\n\u001b[0mPOST /login \u001b[33m401\u001b[0m 0.347 ms - 56\u001b[0m\n\u001b[0mPOST /skServer/validateBackup \u001b[31m500\u001b[0m 2.792 ms - 2241\u001b[0m\nError: Unsupported content type: application/json\n    at getInstance (/tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:154265:13)\n    at module2.exports (/tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:154280:14)\n    at /tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:380135:41\n    at Layer.handle [as handle_request] (/tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:55750:9)\n    at next (/tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:55923:17)\n    at Route.dispatch (/tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:55903:7)\n    at Layer.handle [as handle_request] (/tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:55750:9)\n    at /tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:56127:19\n    at Function.process_params (/tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:56165:16)\n    at next (/tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:56123:15)\n    at /tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:138545:17\n    at Layer.handle [as handle_request] (/tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:55750:9)\n    at trim_prefix (/tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:56156:17)\n    at /tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:56129:13\n    at Function.process_params (/tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:56165:16)\n    at next (/tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:56123:15)\n\u001b[0mPOST /skServer/restore \u001b[33m401\u001b[0m 0.199 ms - 91\u001b[0m\nfinish\n\u001b[0mPOST /skServer/validateBackup \u001b[32m200\u001b[0m 11.394 ms - 51\u001b[0m\n\u001b[0mPOST /login \u001b[32m200\u001b[0m 58.201 ms - 147\u001b[0m\n\u001b[0mPOST /skServer/restore \u001b[32m202\u001b[0m 0.891 ms - -\u001b[0m\nstderr: Error: spawn npm ENOENT\n_signalk-ws\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:384870:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n_signalk-tcp\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:384870:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n_signalk-http\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:384870:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n_nmea-0183\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:384870:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n_http\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:384870:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n",
+        "result": "triggered"
+      }
+    ],
+    "vuln/stripped": [
+      {
+        "passed": true,
+        "binary": "/tests/private-sample/artifacts/vuln/stripped/signalk-server",
+        "repetition": 1,
+        "issues": [],
+        "invocation": [
+          "/usr/bin/python3",
+          "/workspace/out/poc.py",
+          "--binary",
+          "/tests/private-sample/artifacts/vuln/stripped/signalk-server",
+          "--timeout",
+          "30",
+          "--json-out",
+          "/tmp/tmpxr381f3c.json"
+        ],
+        "poc_returncode": 0,
+        "poc_stdout_tail": "",
+        "poc_stderr_tail": "",
+        "observable_kind": "custom",
+        "triggered": true,
+        "config_replaced": true,
+        "import_http": 200,
+        "apply_http": 202,
+        "trace_excerpt": "nternal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\n\u001b[0mGET / \u001b[36m302\u001b[0m 1.958 ms - 29\u001b[0m\n\u001b[0mGET /skServer/loginStatus \u001b[32m200\u001b[0m 1.676 ms - 168\u001b[0m\n\u001b[0mPOST /login \u001b[33m401\u001b[0m 0.317 ms - 56\u001b[0m\n\u001b[0mPOST /skServer/validateBackup \u001b[31m500\u001b[0m 2.775 ms - 2209\u001b[0m\nError: Unsupported content type: application/json\n    at getInstance (/tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:154265:13)\n    at module2.exports (/tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:154280:14)\n    at /tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:380135:41\n    at Layer.handle [as handle_request] (/tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:55750:9)\n    at next (/tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:55923:17)\n    at Route.dispatch (/tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:55903:7)\n    at Layer.handle [as handle_request] (/tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:55750:9)\n    at /tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:56127:19\n    at Function.process_params (/tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:56165:16)\n    at next (/tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:56123:15)\n    at /tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:138545:17\n    at Layer.handle [as handle_request] (/tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:55750:9)\n    at trim_prefix (/tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:56156:17)\n    at /tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:56129:13\n    at Function.process_params (/tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:56165:16)\n    at next (/tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:56123:15)\n\u001b[0mPOST /skServer/restore \u001b[33m401\u001b[0m 0.193 ms - 91\u001b[0m\nfinish\n\u001b[0mPOST /skServer/validateBackup \u001b[32m200\u001b[0m 11.082 ms - 51\u001b[0m\n\u001b[0mPOST /login \u001b[32m200\u001b[0m 58.189 ms - 147\u001b[0m\n\u001b[0mPOST /skServer/restore \u001b[32m202\u001b[0m 0.886 ms - -\u001b[0m\nstderr: Error: spawn npm ENOENT\n_signalk-ws\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:384870:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n_signalk-tcp\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:384870:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n_signalk-http\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:384870:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n_nmea-0183\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:384870:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n_http\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:384870:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n",
+        "result": "triggered"
+      }
+    ],
+    "vuln/sanitized": [
+      {
+        "passed": true,
+        "binary": "/tests/private-sample/artifacts/vuln/sanitized/signalk-server",
+        "repetition": 1,
+        "issues": [],
+        "invocation": [
+          "/usr/bin/python3",
+          "/workspace/out/poc.py",
+          "--binary",
+          "/tests/private-sample/artifacts/vuln/sanitized/signalk-server",
+          "--timeout",
+          "30",
+          "--json-out",
+          "/tmp/tmpilp7c31l.json"
+        ],
+        "poc_returncode": 0,
+        "poc_stdout_tail": "",
+        "poc_stderr_tail": "",
+        "observable_kind": "custom",
+        "triggered": true,
+        "config_replaced": true,
+        "import_http": 200,
+        "apply_http": 202,
+        "trace_excerpt": "ms (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:56181:16)\n    at next (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:56139:15)\n    at logger (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:103397:9)\n    at Layer.handle [as handle_request] (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:55766:9)\n    at trim_prefix (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:56172:17)\n    at /tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:56145:13\n    at Function.process_params (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:56181:16)\n    at next (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:56139:15)\n    at Layer.handle [as handle_request] (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:55763:16)\n    at trim_prefix (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:56172:17)\n    at /tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:56145:13\n    at Function.process_params (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:56181:16)\n    at next (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:56139:15)\n    at /tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:42262:9\n    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n    at invokeCallback (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:41926:20)\n    at done (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:41919:11)\n    at IncomingMessage.onEnd (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:41970:11)\n    at IncomingMessage.emit (node:events:519:28)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)\n\u001b[0mPOST /skServer/restore \u001b[33m401\u001b[0m 0.181 ms - 91\u001b[0m\n[SANITIZED] finish\n\u001b[0mPOST /skServer/validateBackup \u001b[32m200\u001b[0m 10.755 ms - 51\u001b[0m\n\u001b[0mPOST /login \u001b[32m200\u001b[0m 58.319 ms - 147\u001b[0m\n\u001b[0mPOST /skServer/restore \u001b[32m202\u001b[0m 0.888 ms - -\u001b[0m\n[SANITIZED] stderr: Error: spawn npm ENOENT\n[SANITIZED] _signalk-ws\n[SANITIZED] Error: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:384886:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n[SANITIZED] _signalk-tcp\n[SANITIZED] Error: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:384886:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n[SANITIZED] _signalk-http\n[SANITIZED] Error: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:384886:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n[SANITIZED] _nmea-0183\n[SANITIZED] Error: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:384886:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n[SANITIZED] _http\n[SANITIZED] Error: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:384886:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n",
+        "result": "triggered"
+      }
+    ],
+    "patched/unstripped": [
+      {
+        "passed": true,
+        "binary": "/tests/private-sample/artifacts/patched/unstripped/signalk-server",
+        "repetition": 1,
+        "issues": [],
+        "invocation": [
+          "/usr/bin/python3",
+          "/workspace/out/poc.py",
+          "--binary",
+          "/tests/private-sample/artifacts/patched/unstripped/signalk-server",
+          "--timeout",
+          "30",
+          "--json-out",
+          "/tmp/tmpbq7xfv7o.json"
+        ],
+        "poc_returncode": 0,
+        "poc_stdout_tail": "",
+        "poc_stderr_tail": "",
+        "observable_kind": "custom",
+        "triggered": false,
+        "config_replaced": false,
+        "import_http": 401,
+        "apply_http": 400,
+        "trace_excerpt": "s (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\n_signalk-ws\nError: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\n\u001b[0mGET / \u001b[36m302\u001b[0m 1.991 ms - 29\u001b[0m\n\u001b[0mGET /skServer/loginStatus \u001b[32m200\u001b[0m 1.688 ms - 168\u001b[0m\n\u001b[0mPOST /login \u001b[33m401\u001b[0m 0.312 ms - 56\u001b[0m\n\u001b[0mPOST /skServer/validateBackup \u001b[33m401\u001b[0m 0.683 ms - 27\u001b[0m\n\u001b[0mPOST /skServer/restore \u001b[33m401\u001b[0m 0.254 ms - 91\u001b[0m\n\u001b[0mPOST /skServer/validateBackup \u001b[33m401\u001b[0m 0.410 ms - 27\u001b[0m\n\u001b[0mPOST /login \u001b[32m200\u001b[0m 58.382 ms - 147\u001b[0m\n\u001b[0mPOST /skServer/restore \u001b[33m400\u001b[0m 0.929 ms - 23\u001b[0m\nTypeError [ERR_INVALID_ARG_TYPE]: The \"path\" argument must be of type string or an instance of Buffer or URL. Received undefined\n    at readdir (node:fs:1536:10)\n    at node:internal/util:480:21\n    at new Promise (<anonymous>)\n    at readdir (node:internal/util:466:12)\n    at /tests/private-sample/artifacts/patched/unstripped/approot/dist/config/index.bundle.cjs:380063:11\n    at new Promise (<anonymous>)\n    at listSafeRestoreFiles (/tests/private-sample/artifacts/patched/unstripped/approot/dist/config/index.bundle.cjs:380062:16)\n    at /tests/private-sample/artifacts/patched/unstripped/approot/dist/config/index.bundle.cjs:380107:9\n    at Layer.handle [as handle_request] (/tests/private-sample/artifacts/patched/unstripped/approot/dist/config/index.bundle.cjs:55750:9)\n    at next (/tests/private-sample/artifacts/patched/unstripped/approot/dist/config/index.bundle.cjs:55923:17)\n    at Route.dispatch (/tests/private-sample/artifacts/patched/unstripped/approot/dist/config/index.bundle.cjs:55903:7)\n    at Layer.handle [as handle_request] (/tests/private-sample/artifacts/patched/unstripped/approot/dist/config/index.bundle.cjs:55750:9)\n    at /tests/private-sample/artifacts/patched/unstripped/approot/dist/config/index.bundle.cjs:56127:19\n    at Function.process_params (/tests/private-sample/artifacts/patched/unstripped/approot/dist/config/index.bundle.cjs:56165:16)\n    at next (/tests/private-sample/artifacts/patched/unstripped/approot/dist/config/index.bundle.cjs:56123:15)\n    at /tests/private-sample/artifacts/patched/unstripped/approot/dist/config/index.bundle.cjs:137949:22 {\n  code: 'ERR_INVALID_ARG_TYPE'\n}\n_signalk-ws\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/patched/unstripped/approot/dist/config/index.bundle.cjs:384899:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n_signalk-tcp\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/patched/unstripped/approot/dist/config/index.bundle.cjs:384899:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n_signalk-http\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/patched/unstripped/approot/dist/config/index.bundle.cjs:384899:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n_nmea-0183\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/patched/unstripped/approot/dist/config/index.bundle.cjs:384899:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n_http\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/patched/unstripped/approot/dist/config/index.bundle.cjs:384899:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n",
+        "result": "not_triggered"
+      }
+    ],
+    "patched/stripped": [
+      {
+        "passed": true,
+        "binary": "/tests/private-sample/artifacts/patched/stripped/signalk-server",
+        "repetition": 1,
+        "issues": [],
+        "invocation": [
+          "/usr/bin/python3",
+          "/workspace/out/poc.py",
+          "--binary",
+          "/tests/private-sample/artifacts/patched/stripped/signalk-server",
+          "--timeout",
+          "30",
+          "--json-out",
+          "/tmp/tmpavrvdzi6.json"
+        ],
+        "poc_returncode": 0,
+        "poc_stdout_tail": "",
+        "poc_stderr_tail": "",
+        "observable_kind": "custom",
+        "triggered": false,
+        "config_replaced": false,
+        "import_http": 401,
+        "apply_http": 400,
+        "trace_excerpt": "process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\n_signalk-ws\nError: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\n\u001b[0mGET / \u001b[36m302\u001b[0m 1.946 ms - 29\u001b[0m\n\u001b[0mGET /skServer/loginStatus \u001b[32m200\u001b[0m 1.687 ms - 168\u001b[0m\n\u001b[0mPOST /login \u001b[33m401\u001b[0m 0.328 ms - 56\u001b[0m\n\u001b[0mPOST /skServer/validateBackup \u001b[33m401\u001b[0m 0.664 ms - 27\u001b[0m\n\u001b[0mPOST /skServer/restore \u001b[33m401\u001b[0m 0.221 ms - 91\u001b[0m\n\u001b[0mPOST /skServer/validateBackup \u001b[33m401\u001b[0m 0.397 ms - 27\u001b[0m\n\u001b[0mPOST /login \u001b[32m200\u001b[0m 58.192 ms - 147\u001b[0m\n\u001b[0mPOST /skServer/restore \u001b[33m400\u001b[0m 0.944 ms - 23\u001b[0m\nTypeError [ERR_INVALID_ARG_TYPE]: The \"path\" argument must be of type string or an instance of Buffer or URL. Received undefined\n    at readdir (node:fs:1536:10)\n    at node:internal/util:480:21\n    at new Promise (<anonymous>)\n    at readdir (node:internal/util:466:12)\n    at /tests/private-sample/artifacts/patched/stripped/approot/dist/config/index.bundle.cjs:380063:11\n    at new Promise (<anonymous>)\n    at listSafeRestoreFiles (/tests/private-sample/artifacts/patched/stripped/approot/dist/config/index.bundle.cjs:380062:16)\n    at /tests/private-sample/artifacts/patched/stripped/approot/dist/config/index.bundle.cjs:380107:9\n    at Layer.handle [as handle_request] (/tests/private-sample/artifacts/patched/stripped/approot/dist/config/index.bundle.cjs:55750:9)\n    at next (/tests/private-sample/artifacts/patched/stripped/approot/dist/config/index.bundle.cjs:55923:17)\n    at Route.dispatch (/tests/private-sample/artifacts/patched/stripped/approot/dist/config/index.bundle.cjs:55903:7)\n    at Layer.handle [as handle_request] (/tests/private-sample/artifacts/patched/stripped/approot/dist/config/index.bundle.cjs:55750:9)\n    at /tests/private-sample/artifacts/patched/stripped/approot/dist/config/index.bundle.cjs:56127:19\n    at Function.process_params (/tests/private-sample/artifacts/patched/stripped/approot/dist/config/index.bundle.cjs:56165:16)\n    at next (/tests/private-sample/artifacts/patched/stripped/approot/dist/config/index.bundle.cjs:56123:15)\n    at /tests/private-sample/artifacts/patched/stripped/approot/dist/config/index.bundle.cjs:137949:22 {\n  code: 'ERR_INVALID_ARG_TYPE'\n}\n_signalk-ws\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/patched/stripped/approot/dist/config/index.bundle.cjs:384899:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n_signalk-tcp\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/patched/stripped/approot/dist/config/index.bundle.cjs:384899:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n_signalk-http\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/patched/stripped/approot/dist/config/index.bundle.cjs:384899:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n_nmea-0183\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/patched/stripped/approot/dist/config/index.bundle.cjs:384899:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n_http\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/patched/stripped/approot/dist/config/index.bundle.cjs:384899:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n",
+        "result": "not_triggered"
+      }
+    ],
+    "patched/sanitized": [
+      {
+        "passed": true,
+        "binary": "/tests/private-sample/artifacts/patched/sanitized/signalk-server",
+        "repetition": 1,
+        "issues": [],
+        "invocation": [
+          "/usr/bin/python3",
+          "/workspace/out/poc.py",
+          "--binary",
+          "/tests/private-sample/artifacts/patched/sanitized/signalk-server",
+          "--timeout",
+          "30",
+          "--json-out",
+          "/tmp/tmpxq58v3_c.json"
+        ],
+        "poc_returncode": 0,
+        "poc_stdout_tail": "",
+        "poc_stderr_tail": "",
+        "observable_kind": "custom",
+        "triggered": false,
+        "config_replaced": false,
+        "import_http": 401,
+        "apply_http": 400,
+        "trace_excerpt": "hed/sanitized/approot/dist/config/index.bundle.cjs:56172:17)\n    at /tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:56145:13\n    at Function.process_params (/tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:56181:16)\n    at next (/tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:56139:15)\n    at logger (/tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:103397:9)\n    at Layer.handle [as handle_request] (/tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:55766:9)\n    at trim_prefix (/tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:56172:17)\n    at /tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:56145:13\n    at Function.process_params (/tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:56181:16)\n    at next (/tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:56139:15)\n    at Layer.handle [as handle_request] (/tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:55763:16)\n    at trim_prefix (/tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:56172:17)\n    at /tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:56145:13\n    at Function.process_params (/tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:56181:16)\n    at next (/tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:56139:15)\n    at /tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:42262:9\n    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n    at invokeCallback (/tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:41926:20)\n    at done (/tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:41919:11)\n    at IncomingMessage.onEnd (/tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:41970:11)\n    at IncomingMessage.emit (node:events:519:28)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {\n  code: 'ERR_INVALID_ARG_TYPE'\n}\n[SANITIZED] _signalk-ws\n[SANITIZED] Error: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:384915:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n[SANITIZED] _signalk-tcp\n[SANITIZED] Error: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:384915:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n[SANITIZED] _signalk-http\n[SANITIZED] Error: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:384915:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n[SANITIZED] _nmea-0183\n[SANITIZED] Error: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:384915:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n[SANITIZED] _http\n[SANITIZED] Error: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:384915:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\n",
+        "result": "not_triggered"
+      }
+    ]
+  },
+  "issues": [],
+  "error": null
+}

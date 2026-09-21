@@ -1,0 +1,1050 @@
+{
+    "schema_version": 3,
+    "created_at": "2026-09-05T12:05:56.314404Z",
+    "harbor": {
+        "version": "0.22.0",
+        "is_editable": false
+    },
+    "n_concurrent_trials": 2,
+    "retry": {
+        "max_retries": 0,
+        "exclude_exceptions": [
+            "RewardFileEmptyError",
+            "RewardFileNotFoundError",
+            "ModelNotFoundError",
+            "ApiUsageLimitError",
+            "AgentTimeoutError",
+            "VerifierOutputParseError",
+            "AgentAuthenticationError",
+            "AgentSafetyRefusalError",
+            "VerifierTimeoutError"
+        ],
+        "wait_multiplier": 1.0,
+        "min_wait_sec": 1.0,
+        "max_wait_sec": 60.0
+    },
+    "trials": [
+        {
+            "schema_version": 2,
+            "task": {
+                "name": "bbv-ea68f1e9b74b",
+                "version": "1.0.0",
+                "type": "local",
+                "digest": "sha256:d4c418d4ec075699f2bc4e4b1234437ac194b0ab6bcc3a4d90631bf9e42aff11",
+                "source": "binvulnbench-mount",
+                "path": "binvulnbench-mount/bbv-ea68f1e9b74b"
+            },
+            "install_only": false,
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "codex",
+                "model_name": "gpt-5.5",
+                "skills": [],
+                "resume_trajectory": false,
+                "extra_allowed_hosts": [],
+                "kwargs": {},
+                "env": {
+                    "CODEX_STATUS_SHIM": "127.0.0.1:8787"
+                },
+                "mcp_servers": []
+            },
+            "bridge_inputs": {},
+            "skills": [],
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "mounts": [
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex",
+                        "target": "/usr/local/bin/codex",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-package.json",
+                        "target": "/usr/local/codex-package.json",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-resources",
+                        "target": "/usr/local/codex-resources",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path",
+                        "target": "/usr/local/codex-path",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/harbor-work/codex_status_shim.py",
+                        "target": "/usr/local/codex_status_shim.py",
+                        "read_only": true
+                    }
+                ],
+                "extra_docker_compose": [],
+                "kwargs": {},
+                "extra_allowed_hosts": []
+            },
+            "verifier": {
+                "disable": false,
+                "environment_mode": "separate"
+            }
+        },
+        {
+            "schema_version": 2,
+            "task": {
+                "name": "bbv-3c966643c555",
+                "version": "1.0.0",
+                "type": "local",
+                "digest": "sha256:ea07889771fdd1112bd0fb05643ec8b5154aa815c72ea4185184bc58045000b3",
+                "source": "binvulnbench-mount",
+                "path": "binvulnbench-mount/bbv-3c966643c555"
+            },
+            "install_only": false,
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "codex",
+                "model_name": "gpt-5.5",
+                "skills": [],
+                "resume_trajectory": false,
+                "extra_allowed_hosts": [],
+                "kwargs": {},
+                "env": {
+                    "CODEX_STATUS_SHIM": "127.0.0.1:8787"
+                },
+                "mcp_servers": []
+            },
+            "bridge_inputs": {},
+            "skills": [],
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "mounts": [
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex",
+                        "target": "/usr/local/bin/codex",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-package.json",
+                        "target": "/usr/local/codex-package.json",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-resources",
+                        "target": "/usr/local/codex-resources",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path",
+                        "target": "/usr/local/codex-path",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/harbor-work/codex_status_shim.py",
+                        "target": "/usr/local/codex_status_shim.py",
+                        "read_only": true
+                    }
+                ],
+                "extra_docker_compose": [],
+                "kwargs": {},
+                "extra_allowed_hosts": []
+            },
+            "verifier": {
+                "disable": false,
+                "environment_mode": "separate"
+            }
+        },
+        {
+            "schema_version": 2,
+            "task": {
+                "name": "bbv-d3e9a641b34a",
+                "version": "1.0.0",
+                "type": "local",
+                "digest": "sha256:b58a4d397ab50231f26b418e30f9f33985ff6739e1be07ee164ca5f97a86e464",
+                "source": "binvulnbench-mount",
+                "path": "binvulnbench-mount/bbv-d3e9a641b34a"
+            },
+            "install_only": false,
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "codex",
+                "model_name": "gpt-5.5",
+                "skills": [],
+                "resume_trajectory": false,
+                "extra_allowed_hosts": [],
+                "kwargs": {},
+                "env": {
+                    "CODEX_STATUS_SHIM": "127.0.0.1:8787"
+                },
+                "mcp_servers": []
+            },
+            "bridge_inputs": {},
+            "skills": [],
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "mounts": [
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex",
+                        "target": "/usr/local/bin/codex",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-package.json",
+                        "target": "/usr/local/codex-package.json",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-resources",
+                        "target": "/usr/local/codex-resources",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path",
+                        "target": "/usr/local/codex-path",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/harbor-work/codex_status_shim.py",
+                        "target": "/usr/local/codex_status_shim.py",
+                        "read_only": true
+                    }
+                ],
+                "extra_docker_compose": [],
+                "kwargs": {},
+                "extra_allowed_hosts": []
+            },
+            "verifier": {
+                "disable": false,
+                "environment_mode": "separate"
+            }
+        },
+        {
+            "schema_version": 2,
+            "task": {
+                "name": "bbv-5033fb06cd38",
+                "version": "1.0.0",
+                "type": "local",
+                "digest": "sha256:370860bc4fc35edf5b3debc07cf2824cb4e25913a9c7284daa928adba6abc90b",
+                "source": "binvulnbench-mount",
+                "path": "binvulnbench-mount/bbv-5033fb06cd38"
+            },
+            "install_only": false,
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "codex",
+                "model_name": "gpt-5.5",
+                "skills": [],
+                "resume_trajectory": false,
+                "extra_allowed_hosts": [],
+                "kwargs": {},
+                "env": {
+                    "CODEX_STATUS_SHIM": "127.0.0.1:8787"
+                },
+                "mcp_servers": []
+            },
+            "bridge_inputs": {},
+            "skills": [],
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "mounts": [
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex",
+                        "target": "/usr/local/bin/codex",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-package.json",
+                        "target": "/usr/local/codex-package.json",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-resources",
+                        "target": "/usr/local/codex-resources",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path",
+                        "target": "/usr/local/codex-path",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/harbor-work/codex_status_shim.py",
+                        "target": "/usr/local/codex_status_shim.py",
+                        "read_only": true
+                    }
+                ],
+                "extra_docker_compose": [],
+                "kwargs": {},
+                "extra_allowed_hosts": []
+            },
+            "verifier": {
+                "disable": false,
+                "environment_mode": "separate"
+            }
+        },
+        {
+            "schema_version": 2,
+            "task": {
+                "name": "bbv-22c3fb03220a",
+                "version": "1.0.0",
+                "type": "local",
+                "digest": "sha256:b92e5a3a9218a5204cf2c822317551fdcad91a8f0ac5fdeaadc196a345d1bf8c",
+                "source": "binvulnbench-mount",
+                "path": "binvulnbench-mount/bbv-22c3fb03220a"
+            },
+            "install_only": false,
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "codex",
+                "model_name": "gpt-5.5",
+                "skills": [],
+                "resume_trajectory": false,
+                "extra_allowed_hosts": [],
+                "kwargs": {},
+                "env": {
+                    "CODEX_STATUS_SHIM": "127.0.0.1:8787"
+                },
+                "mcp_servers": []
+            },
+            "bridge_inputs": {},
+            "skills": [],
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "mounts": [
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex",
+                        "target": "/usr/local/bin/codex",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-package.json",
+                        "target": "/usr/local/codex-package.json",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-resources",
+                        "target": "/usr/local/codex-resources",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path",
+                        "target": "/usr/local/codex-path",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/harbor-work/codex_status_shim.py",
+                        "target": "/usr/local/codex_status_shim.py",
+                        "read_only": true
+                    }
+                ],
+                "extra_docker_compose": [],
+                "kwargs": {},
+                "extra_allowed_hosts": []
+            },
+            "verifier": {
+                "disable": false,
+                "environment_mode": "separate"
+            }
+        },
+        {
+            "schema_version": 2,
+            "task": {
+                "name": "bbv-2864ea7e3ca0",
+                "version": "1.0.0",
+                "type": "local",
+                "digest": "sha256:ff7d8c712b6f98aff286bfaeb549159552e600cda2da0e82ec38aac15f4078ee",
+                "source": "binvulnbench-mount",
+                "path": "binvulnbench-mount/bbv-2864ea7e3ca0"
+            },
+            "install_only": false,
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "codex",
+                "model_name": "gpt-5.5",
+                "skills": [],
+                "resume_trajectory": false,
+                "extra_allowed_hosts": [],
+                "kwargs": {},
+                "env": {
+                    "CODEX_STATUS_SHIM": "127.0.0.1:8787"
+                },
+                "mcp_servers": []
+            },
+            "bridge_inputs": {},
+            "skills": [],
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "mounts": [
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex",
+                        "target": "/usr/local/bin/codex",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-package.json",
+                        "target": "/usr/local/codex-package.json",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-resources",
+                        "target": "/usr/local/codex-resources",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path",
+                        "target": "/usr/local/codex-path",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/harbor-work/codex_status_shim.py",
+                        "target": "/usr/local/codex_status_shim.py",
+                        "read_only": true
+                    }
+                ],
+                "extra_docker_compose": [],
+                "kwargs": {},
+                "extra_allowed_hosts": []
+            },
+            "verifier": {
+                "disable": false,
+                "environment_mode": "separate"
+            }
+        },
+        {
+            "schema_version": 2,
+            "task": {
+                "name": "bbv-1b6def6e7591",
+                "version": "1.0.0",
+                "type": "local",
+                "digest": "sha256:faddb23fa53a4b57d6c08623608ff63f34386b46535b3a0d83df9b2e778e7065",
+                "source": "binvulnbench-mount",
+                "path": "binvulnbench-mount/bbv-1b6def6e7591"
+            },
+            "install_only": false,
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "codex",
+                "model_name": "gpt-5.5",
+                "skills": [],
+                "resume_trajectory": false,
+                "extra_allowed_hosts": [],
+                "kwargs": {},
+                "env": {
+                    "CODEX_STATUS_SHIM": "127.0.0.1:8787"
+                },
+                "mcp_servers": []
+            },
+            "bridge_inputs": {},
+            "skills": [],
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "mounts": [
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex",
+                        "target": "/usr/local/bin/codex",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-package.json",
+                        "target": "/usr/local/codex-package.json",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-resources",
+                        "target": "/usr/local/codex-resources",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path",
+                        "target": "/usr/local/codex-path",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/harbor-work/codex_status_shim.py",
+                        "target": "/usr/local/codex_status_shim.py",
+                        "read_only": true
+                    }
+                ],
+                "extra_docker_compose": [],
+                "kwargs": {},
+                "extra_allowed_hosts": []
+            },
+            "verifier": {
+                "disable": false,
+                "environment_mode": "separate"
+            }
+        },
+        {
+            "schema_version": 2,
+            "task": {
+                "name": "bbv-9a92d775ebc9",
+                "version": "1.0.0",
+                "type": "local",
+                "digest": "sha256:601474720f6f08c50aedf8c96ab319c9648f3599942bc896350eaf1903f77ee4",
+                "source": "binvulnbench-mount",
+                "path": "binvulnbench-mount/bbv-9a92d775ebc9"
+            },
+            "install_only": false,
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "codex",
+                "model_name": "gpt-5.5",
+                "skills": [],
+                "resume_trajectory": false,
+                "extra_allowed_hosts": [],
+                "kwargs": {},
+                "env": {
+                    "CODEX_STATUS_SHIM": "127.0.0.1:8787"
+                },
+                "mcp_servers": []
+            },
+            "bridge_inputs": {},
+            "skills": [],
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "mounts": [
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex",
+                        "target": "/usr/local/bin/codex",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-package.json",
+                        "target": "/usr/local/codex-package.json",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-resources",
+                        "target": "/usr/local/codex-resources",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path",
+                        "target": "/usr/local/codex-path",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/harbor-work/codex_status_shim.py",
+                        "target": "/usr/local/codex_status_shim.py",
+                        "read_only": true
+                    }
+                ],
+                "extra_docker_compose": [],
+                "kwargs": {},
+                "extra_allowed_hosts": []
+            },
+            "verifier": {
+                "disable": false,
+                "environment_mode": "separate"
+            }
+        },
+        {
+            "schema_version": 2,
+            "task": {
+                "name": "bbv-6139d54a67d5",
+                "version": "1.0.0",
+                "type": "local",
+                "digest": "sha256:d7ed61f4f70c3b741dc3dd989f531087e373d9807925d43e35822bd231dfd57e",
+                "source": "binvulnbench-mount",
+                "path": "binvulnbench-mount/bbv-6139d54a67d5"
+            },
+            "install_only": false,
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "codex",
+                "model_name": "gpt-5.5",
+                "skills": [],
+                "resume_trajectory": false,
+                "extra_allowed_hosts": [],
+                "kwargs": {},
+                "env": {
+                    "CODEX_STATUS_SHIM": "127.0.0.1:8787"
+                },
+                "mcp_servers": []
+            },
+            "bridge_inputs": {},
+            "skills": [],
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "mounts": [
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex",
+                        "target": "/usr/local/bin/codex",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-package.json",
+                        "target": "/usr/local/codex-package.json",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-resources",
+                        "target": "/usr/local/codex-resources",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path",
+                        "target": "/usr/local/codex-path",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/harbor-work/codex_status_shim.py",
+                        "target": "/usr/local/codex_status_shim.py",
+                        "read_only": true
+                    }
+                ],
+                "extra_docker_compose": [],
+                "kwargs": {},
+                "extra_allowed_hosts": []
+            },
+            "verifier": {
+                "disable": false,
+                "environment_mode": "separate"
+            }
+        },
+        {
+            "schema_version": 2,
+            "task": {
+                "name": "bbv-a672cb555368",
+                "version": "1.0.0",
+                "type": "local",
+                "digest": "sha256:c947feb4e613679e25133127044efa490478df9d87c371e702cf1a42376fcbd1",
+                "source": "binvulnbench-mount",
+                "path": "binvulnbench-mount/bbv-a672cb555368"
+            },
+            "install_only": false,
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "codex",
+                "model_name": "gpt-5.5",
+                "skills": [],
+                "resume_trajectory": false,
+                "extra_allowed_hosts": [],
+                "kwargs": {},
+                "env": {
+                    "CODEX_STATUS_SHIM": "127.0.0.1:8787"
+                },
+                "mcp_servers": []
+            },
+            "bridge_inputs": {},
+            "skills": [],
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "mounts": [
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex",
+                        "target": "/usr/local/bin/codex",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-package.json",
+                        "target": "/usr/local/codex-package.json",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-resources",
+                        "target": "/usr/local/codex-resources",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path",
+                        "target": "/usr/local/codex-path",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/harbor-work/codex_status_shim.py",
+                        "target": "/usr/local/codex_status_shim.py",
+                        "read_only": true
+                    }
+                ],
+                "extra_docker_compose": [],
+                "kwargs": {},
+                "extra_allowed_hosts": []
+            },
+            "verifier": {
+                "disable": false,
+                "environment_mode": "separate"
+            }
+        },
+        {
+            "schema_version": 2,
+            "task": {
+                "name": "bbv-2ec5413a2b8e",
+                "version": "1.0.0",
+                "type": "local",
+                "digest": "sha256:ad0b88c39c5bac17e0def91784d7371d89ae69ba77a717314dbf023467b693e6",
+                "source": "binvulnbench-mount",
+                "path": "binvulnbench-mount/bbv-2ec5413a2b8e"
+            },
+            "install_only": false,
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "codex",
+                "model_name": "gpt-5.5",
+                "skills": [],
+                "resume_trajectory": false,
+                "extra_allowed_hosts": [],
+                "kwargs": {},
+                "env": {
+                    "CODEX_STATUS_SHIM": "127.0.0.1:8787"
+                },
+                "mcp_servers": []
+            },
+            "bridge_inputs": {},
+            "skills": [],
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "mounts": [
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex",
+                        "target": "/usr/local/bin/codex",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-package.json",
+                        "target": "/usr/local/codex-package.json",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-resources",
+                        "target": "/usr/local/codex-resources",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path",
+                        "target": "/usr/local/codex-path",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/harbor-work/codex_status_shim.py",
+                        "target": "/usr/local/codex_status_shim.py",
+                        "read_only": true
+                    }
+                ],
+                "extra_docker_compose": [],
+                "kwargs": {},
+                "extra_allowed_hosts": []
+            },
+            "verifier": {
+                "disable": false,
+                "environment_mode": "separate"
+            }
+        },
+        {
+            "schema_version": 2,
+            "task": {
+                "name": "bbv-f050dfd3a6c5",
+                "version": "1.0.0",
+                "type": "local",
+                "digest": "sha256:f1491681193f4b1fb292c14d32775867d77cd5d6832ff9d59f89b397d5897f70",
+                "source": "binvulnbench-mount",
+                "path": "binvulnbench-mount/bbv-f050dfd3a6c5"
+            },
+            "install_only": false,
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "codex",
+                "model_name": "gpt-5.5",
+                "skills": [],
+                "resume_trajectory": false,
+                "extra_allowed_hosts": [],
+                "kwargs": {},
+                "env": {
+                    "CODEX_STATUS_SHIM": "127.0.0.1:8787"
+                },
+                "mcp_servers": []
+            },
+            "bridge_inputs": {},
+            "skills": [],
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "mounts": [
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex",
+                        "target": "/usr/local/bin/codex",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-package.json",
+                        "target": "/usr/local/codex-package.json",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-resources",
+                        "target": "/usr/local/codex-resources",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path",
+                        "target": "/usr/local/codex-path",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/harbor-work/codex_status_shim.py",
+                        "target": "/usr/local/codex_status_shim.py",
+                        "read_only": true
+                    }
+                ],
+                "extra_docker_compose": [],
+                "kwargs": {},
+                "extra_allowed_hosts": []
+            },
+            "verifier": {
+                "disable": false,
+                "environment_mode": "separate"
+            }
+        },
+        {
+            "schema_version": 2,
+            "task": {
+                "name": "bbv-8b80fe07a925",
+                "version": "1.0.0",
+                "type": "local",
+                "digest": "sha256:04a2ce73695931bb7c1747d1503ad4f939a57198b0c23ee7cd1b4136629c66b9",
+                "source": "binvulnbench-mount",
+                "path": "binvulnbench-mount/bbv-8b80fe07a925"
+            },
+            "install_only": false,
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "codex",
+                "model_name": "gpt-5.5",
+                "skills": [],
+                "resume_trajectory": false,
+                "extra_allowed_hosts": [],
+                "kwargs": {},
+                "env": {
+                    "CODEX_STATUS_SHIM": "127.0.0.1:8787"
+                },
+                "mcp_servers": []
+            },
+            "bridge_inputs": {},
+            "skills": [],
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "mounts": [
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex",
+                        "target": "/usr/local/bin/codex",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-package.json",
+                        "target": "/usr/local/codex-package.json",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-resources",
+                        "target": "/usr/local/codex-resources",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path",
+                        "target": "/usr/local/codex-path",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/harbor-work/codex_status_shim.py",
+                        "target": "/usr/local/codex_status_shim.py",
+                        "read_only": true
+                    }
+                ],
+                "extra_docker_compose": [],
+                "kwargs": {},
+                "extra_allowed_hosts": []
+            },
+            "verifier": {
+                "disable": false,
+                "environment_mode": "separate"
+            }
+        },
+        {
+            "schema_version": 2,
+            "task": {
+                "name": "bbv-58ba19a72015",
+                "version": "1.0.0",
+                "type": "local",
+                "digest": "sha256:ccc01e3d1690943ecc4a41172acf14284bb107ebccf7879098654fbc9c991793",
+                "source": "binvulnbench-mount",
+                "path": "binvulnbench-mount/bbv-58ba19a72015"
+            },
+            "install_only": false,
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "codex",
+                "model_name": "gpt-5.5",
+                "skills": [],
+                "resume_trajectory": false,
+                "extra_allowed_hosts": [],
+                "kwargs": {},
+                "env": {
+                    "CODEX_STATUS_SHIM": "127.0.0.1:8787"
+                },
+                "mcp_servers": []
+            },
+            "bridge_inputs": {},
+            "skills": [],
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "mounts": [
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex",
+                        "target": "/usr/local/bin/codex",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-package.json",
+                        "target": "/usr/local/codex-package.json",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-resources",
+                        "target": "/usr/local/codex-resources",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path",
+                        "target": "/usr/local/codex-path",
+                        "read_only": true
+                    },
+                    {
+                        "type": "bind",
+                        "source": "/home/liqingyu/harbor-work/codex_status_shim.py",
+                        "target": "/usr/local/codex_status_shim.py",
+                        "read_only": true
+                    }
+                ],
+                "extra_docker_compose": [],
+                "kwargs": {},
+                "extra_allowed_hosts": []
+            },
+            "verifier": {
+                "disable": false,
+                "environment_mode": "separate"
+            }
+        }
+    ]
+}

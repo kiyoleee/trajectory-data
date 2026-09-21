@@ -1,0 +1,87 @@
+{
+  "passed": false,
+  "runs": {
+    "vuln/unstripped": [
+      {
+        "binary": "/tests/private-sample/artifacts/vuln/unstripped/jasper",
+        "repetition": 0,
+        "passed": true,
+        "returncode": -11,
+        "signal": "SIGSEGV",
+        "crashed": true,
+        "issues": [],
+        "observable_kind": "crash_trace"
+      }
+    ],
+    "vuln/stripped": [
+      {
+        "binary": "/tests/private-sample/artifacts/vuln/stripped/jasper",
+        "repetition": 0,
+        "passed": true,
+        "returncode": -11,
+        "signal": "SIGSEGV",
+        "crashed": true,
+        "issues": [],
+        "observable_kind": "crash_trace"
+      }
+    ],
+    "vuln/sanitized": [
+      {
+        "binary": "/tests/private-sample/artifacts/vuln/sanitized/jasper",
+        "repetition": 0,
+        "passed": true,
+        "returncode": 1,
+        "signal": null,
+        "crashed": true,
+        "issues": [],
+        "observable_kind": "stderr"
+      }
+    ],
+    "patched/unstripped": [
+      {
+        "binary": "/tests/private-sample/artifacts/patched/unstripped/jasper",
+        "repetition": 0,
+        "passed": false,
+        "returncode": -11,
+        "signal": "SIGSEGV",
+        "crashed": true,
+        "issues": [
+          "expected no crash but got crash (rc=-11)"
+        ],
+        "observable_kind": "crash_trace"
+      }
+    ],
+    "patched/stripped": [
+      {
+        "binary": "/tests/private-sample/artifacts/patched/stripped/jasper",
+        "repetition": 0,
+        "passed": false,
+        "returncode": -11,
+        "signal": "SIGSEGV",
+        "crashed": true,
+        "issues": [
+          "expected no crash but got crash (rc=-11)"
+        ],
+        "observable_kind": "crash_trace"
+      }
+    ],
+    "patched/sanitized": [
+      {
+        "binary": "/tests/private-sample/artifacts/patched/sanitized/jasper",
+        "repetition": 0,
+        "passed": false,
+        "returncode": 1,
+        "signal": null,
+        "crashed": true,
+        "issues": [
+          "expected no crash but got crash (rc=1)"
+        ],
+        "observable_kind": "stderr"
+      }
+    ]
+  },
+  "issues": [
+    "one or more binary variants did not meet expected behavior"
+  ],
+  "error": null
+}

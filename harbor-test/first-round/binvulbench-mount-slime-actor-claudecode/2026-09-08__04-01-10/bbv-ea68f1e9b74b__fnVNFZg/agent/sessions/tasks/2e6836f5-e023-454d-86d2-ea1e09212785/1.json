@@ -1,0 +1,8 @@
+{
+  "id": "1",
+  "subject": "Explore target binary to understand HTTP API",
+  "description": "Examine the signalk-server binary to understand its HTTP interface, endpoints, authentication, and configuration management",
+  "status": "in_progress",
+  "blocks": [],
+  "blockedBy": []
+}

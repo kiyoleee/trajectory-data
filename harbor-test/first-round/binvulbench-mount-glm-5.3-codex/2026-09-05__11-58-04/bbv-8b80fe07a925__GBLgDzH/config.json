@@ -1,0 +1,51 @@
+{
+    "task": {
+        "path": "binvulnbench-mount/bbv-8b80fe07a925",
+        "source": "binvulnbench-mount"
+    },
+    "trial_name": "bbv-8b80fe07a925__GBLgDzH",
+    "trials_dir": "result/binvulbench-mount-glm-5.3-codex/2026-09-05__11-58-04",
+    "agent": {
+        "name": "codex",
+        "model_name": "glm-5.3",
+        "env": {
+            "CODEX_STATUS_SHIM": "127.0.0.1:8787"
+        }
+    },
+    "environment": {
+        "type": "docker",
+        "mounts": [
+            {
+                "type": "bind",
+                "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex",
+                "target": "/usr/local/bin/codex",
+                "read_only": true
+            },
+            {
+                "type": "bind",
+                "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-package.json",
+                "target": "/usr/local/codex-package.json",
+                "read_only": true
+            },
+            {
+                "type": "bind",
+                "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-resources",
+                "target": "/usr/local/codex-resources",
+                "read_only": true
+            },
+            {
+                "type": "bind",
+                "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path",
+                "target": "/usr/local/codex-path",
+                "read_only": true
+            },
+            {
+                "type": "bind",
+                "source": "/home/liqingyu/harbor-work/codex_status_shim.py",
+                "target": "/usr/local/codex_status_shim.py",
+                "read_only": true
+            }
+        ]
+    },
+    "job_id": "5f811f47-f4d5-457b-8391-aa1841872b1d"
+}

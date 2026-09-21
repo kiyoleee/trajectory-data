@@ -1,0 +1,9 @@
+{
+  "id": "1",
+  "subject": "Write /workspace/out/poc.py",
+  "description": "Implement single-file stdlib-only PoC that starts goshs on loopback, drives the /?ws websocket with dynamically constructed JSON messages, records a full C>/S< transcript, and emits the required JSON contract.",
+  "activeForm": "Writing poc.py",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

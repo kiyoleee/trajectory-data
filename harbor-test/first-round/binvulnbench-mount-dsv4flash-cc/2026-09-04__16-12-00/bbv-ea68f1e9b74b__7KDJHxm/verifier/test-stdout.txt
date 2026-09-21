@@ -1,0 +1,178 @@
+{
+  "passed": true,
+  "sample_root": "/tests/private-sample",
+  "poc": "/workspace/out/poc.py",
+  "repetitions": 1,
+  "runs": {
+    "vuln/unstripped": [
+      {
+        "passed": true,
+        "binary": "/tests/private-sample/artifacts/vuln/unstripped/signalk-server",
+        "repetition": 1,
+        "issues": [],
+        "invocation": [
+          "/usr/bin/python3",
+          "/workspace/out/poc.py",
+          "--binary",
+          "/tests/private-sample/artifacts/vuln/unstripped/signalk-server",
+          "--timeout",
+          "30",
+          "--json-out",
+          "/tmp/tmpbdf2842f.json"
+        ],
+        "poc_returncode": 0,
+        "poc_stdout_tail": "Result written to /tmp/tmpbdf2842f.json\n",
+        "poc_stderr_tail": "",
+        "observable_kind": "custom",
+        "triggered": true,
+        "config_replaced": true,
+        "import_http": 200,
+        "apply_http": 202,
+        "trace_excerpt": "Could not parse security config\nENOENT: no such file or directory, open '/tmp/signalk_config_biz3p0fy/security.json'\nCould not parse security config\nENOENT: no such file or directory, open '/tmp/signalk_config_biz3p0fy/security.json'\nCould not parse security config\nENOENT: no such file or directory, open '/tmp/signalk_config_biz3p0fy/security.json'\n(node:56) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.\n(Use `node --trace-deprecation ...` to show where the warning was created)\nError: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\nError: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\nError: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\nError: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\nError: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\n[Error: ENOENT: no such file or directory, open '/tests/private-sample/artifacts/vuln/unstripped/approot/dist/node_modules/@signalk/server-admin-ui/public/index.html'] {\n  errno: -2,\n  code: 'ENOENT',\n  syscall: 'open',\n  path: '/tests/private-sample/artifacts/vuln/unstripped/approot/dist/node_modules/@signalk/server-admin-ui/public/index.html'\n}\nError [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (node:_http_outgoing:700:11)\n    at ServerResponse.header (/tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:60681:14)\n    at ServerResponse.contentType (/tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:60630:19)\n    at ReadFileContext.callback (/tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:379542:15)\n    at FSReqCallback.readFileAfterOpen [as oncomplete] (node:fs:297:13) {\n  code: 'ERR_HTTP_HEADERS_SENT'\n}\nstderr: Error: spawn npm ENOENT\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:384870:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/vuln/unstripped/approot/dist/config/index.bundle.cjs:384870:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sampl",
+        "result": "triggered"
+      }
+    ],
+    "vuln/stripped": [
+      {
+        "passed": true,
+        "binary": "/tests/private-sample/artifacts/vuln/stripped/signalk-server",
+        "repetition": 1,
+        "issues": [],
+        "invocation": [
+          "/usr/bin/python3",
+          "/workspace/out/poc.py",
+          "--binary",
+          "/tests/private-sample/artifacts/vuln/stripped/signalk-server",
+          "--timeout",
+          "30",
+          "--json-out",
+          "/tmp/tmp_2msq6bg.json"
+        ],
+        "poc_returncode": 0,
+        "poc_stdout_tail": "Result written to /tmp/tmp_2msq6bg.json\n",
+        "poc_stderr_tail": "",
+        "observable_kind": "custom",
+        "triggered": true,
+        "config_replaced": true,
+        "import_http": 200,
+        "apply_http": 202,
+        "trace_excerpt": "Could not parse security config\nENOENT: no such file or directory, open '/tmp/signalk_config_xcvyrvc4/security.json'\nCould not parse security config\nENOENT: no such file or directory, open '/tmp/signalk_config_xcvyrvc4/security.json'\nCould not parse security config\nENOENT: no such file or directory, open '/tmp/signalk_config_xcvyrvc4/security.json'\n(node:70) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.\n(Use `node --trace-deprecation ...` to show where the warning was created)\nError: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\nError: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\nError: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\nError: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\nError: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\n[Error: ENOENT: no such file or directory, open '/tests/private-sample/artifacts/vuln/stripped/approot/dist/node_modules/@signalk/server-admin-ui/public/index.html'] {\n  errno: -2,\n  code: 'ENOENT',\n  syscall: 'open',\n  path: '/tests/private-sample/artifacts/vuln/stripped/approot/dist/node_modules/@signalk/server-admin-ui/public/index.html'\n}\nError [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (node:_http_outgoing:700:11)\n    at ServerResponse.header (/tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:60681:14)\n    at ServerResponse.contentType (/tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:60630:19)\n    at ReadFileContext.callback (/tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:379542:15)\n    at FSReqCallback.readFileAfterOpen [as oncomplete] (node:fs:297:13) {\n  code: 'ERR_HTTP_HEADERS_SENT'\n}\nstderr: Error: spawn npm ENOENT\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:384870:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/vuln/stripped/approot/dist/config/index.bundle.cjs:384870:25)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)\nError: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/vu",
+        "result": "triggered"
+      }
+    ],
+    "vuln/sanitized": [
+      {
+        "passed": true,
+        "binary": "/tests/private-sample/artifacts/vuln/sanitized/signalk-server",
+        "repetition": 1,
+        "issues": [],
+        "invocation": [
+          "/usr/bin/python3",
+          "/workspace/out/poc.py",
+          "--binary",
+          "/tests/private-sample/artifacts/vuln/sanitized/signalk-server",
+          "--timeout",
+          "30",
+          "--json-out",
+          "/tmp/tmpcqbdt5hf.json"
+        ],
+        "poc_returncode": 0,
+        "poc_stdout_tail": "Result written to /tmp/tmpcqbdt5hf.json\n",
+        "poc_stderr_tail": "",
+        "observable_kind": "custom",
+        "triggered": true,
+        "config_replaced": true,
+        "import_http": 200,
+        "apply_http": 202,
+        "trace_excerpt": "[SANITIZED] ENOENT: no such file or directory, open '/tmp/signalk_config_mgxwy_rj/security.json'\n[SANITIZED] (node:84) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.\n(Use `node --trace-deprecation ...` to show where the warning was created)\n[SANITIZED] Error: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\n[SANITIZED] Error: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\n[SANITIZED] Error: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\n[SANITIZED] Error: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\n[SANITIZED] Error: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\n[SANITIZED] [Error: ENOENT: no such file or directory, open '/tests/private-sample/artifacts/vuln/sanitized/approot/dist/node_modules/@signalk/server-admin-ui/public/index.html'] {\n  errno: -2,\n  code: 'ENOENT',\n  syscall: 'open',\n  path: '/tests/private-sample/artifacts/vuln/sanitized/approot/dist/node_modules/@signalk/server-admin-ui/public/index.html'\n}\n[SANITIZED-ERROR] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (node:_http_outgoing:700:11)\n    at ServerResponse.header (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:60697:14)\n    at ServerResponse.contentType (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:60646:19)\n    at ReadFileContext.callback (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:379558:15)\n    at FSReqCallback.readFileAfterOpen [as oncomplete] (node:fs:297:13)\n[SANITIZED] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (node:_http_outgoing:700:11)\n    at ServerResponse.header (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:60697:14)\n    at ServerResponse.contentType (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:60646:19)\n    at ReadFileContext.callback (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:379558:15)\n    at FSReqCallback.readFileAfterOpen [as oncomplete] (node:fs:297:13) {\n  code: 'ERR_HTTP_HEADERS_SENT'\n}\n[SANITIZED] stderr: Error: spawn npm ENOENT\n[SANITIZED] Error: Timed out getting default route\n    at Timeout._onTimeout (/tests/private-sample/artifacts/vuln/sanitized/approot/dist/config/index.bundle.cjs:3",
+        "result": "triggered"
+      }
+    ],
+    "patched/unstripped": [
+      {
+        "passed": true,
+        "binary": "/tests/private-sample/artifacts/patched/unstripped/signalk-server",
+        "repetition": 1,
+        "issues": [],
+        "invocation": [
+          "/usr/bin/python3",
+          "/workspace/out/poc.py",
+          "--binary",
+          "/tests/private-sample/artifacts/patched/unstripped/signalk-server",
+          "--timeout",
+          "30",
+          "--json-out",
+          "/tmp/tmpuh6lbafg.json"
+        ],
+        "poc_returncode": 0,
+        "poc_stdout_tail": "Result written to /tmp/tmpuh6lbafg.json\n",
+        "poc_stderr_tail": "",
+        "observable_kind": "custom",
+        "triggered": false,
+        "config_replaced": false,
+        "import_http": 401,
+        "apply_http": 0,
+        "trace_excerpt": "Could not parse security config\nENOENT: no such file or directory, open '/tmp/signalk_config_oxlxfdab/security.json'\nCould not parse security config\nENOENT: no such file or directory, open '/tmp/signalk_config_oxlxfdab/security.json'\nCould not parse security config\nENOENT: no such file or directory, open '/tmp/signalk_config_oxlxfdab/security.json'\n(node:98) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.\n(Use `node --trace-deprecation ...` to show where the warning was created)\nError: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\nError: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\nError: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\nError: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\nError: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\n[Error: ENOENT: no such file or directory, open '/tests/private-sample/artifacts/patched/unstripped/approot/dist/node_modules/@signalk/server-admin-ui/public/index.html'] {\n  errno: -2,\n  code: 'ENOENT',\n  syscall: 'open',\n  path: '/tests/private-sample/artifacts/patched/unstripped/approot/dist/node_modules/@signalk/server-admin-ui/public/index.html'\n}\nError [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (node:_http_outgoing:700:11)\n    at ServerResponse.header (/tests/private-sample/artifacts/patched/unstripped/approot/dist/config/index.bundle.cjs:60681:14)\n    at ServerResponse.contentType (/tests/private-sample/artifacts/patched/unstripped/approot/dist/config/index.bundle.cjs:60630:19)\n    at ReadFileContext.callback (/tests/private-sample/artifacts/patched/unstripped/approot/dist/config/index.bundle.cjs:379546:15)\n    at FSReqCallback.readFileAfterOpen [as oncomplete] (node:fs:297:13) {\n  code: 'ERR_HTTP_HEADERS_SENT'\n}\n",
+        "result": "not_triggered"
+      }
+    ],
+    "patched/stripped": [
+      {
+        "passed": true,
+        "binary": "/tests/private-sample/artifacts/patched/stripped/signalk-server",
+        "repetition": 1,
+        "issues": [],
+        "invocation": [
+          "/usr/bin/python3",
+          "/workspace/out/poc.py",
+          "--binary",
+          "/tests/private-sample/artifacts/patched/stripped/signalk-server",
+          "--timeout",
+          "30",
+          "--json-out",
+          "/tmp/tmpn0jhlrgb.json"
+        ],
+        "poc_returncode": 0,
+        "poc_stdout_tail": "Result written to /tmp/tmpn0jhlrgb.json\n",
+        "poc_stderr_tail": "",
+        "observable_kind": "custom",
+        "triggered": false,
+        "config_replaced": false,
+        "import_http": 401,
+        "apply_http": 0,
+        "trace_excerpt": "Could not parse security config\nENOENT: no such file or directory, open '/tmp/signalk_config_o5757pjd/security.json'\nCould not parse security config\nENOENT: no such file or directory, open '/tmp/signalk_config_o5757pjd/security.json'\nCould not parse security config\nENOENT: no such file or directory, open '/tmp/signalk_config_o5757pjd/security.json'\n(node:111) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.\n(Use `node --trace-deprecation ...` to show where the warning was created)\nError: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\nError: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\nError: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\nError: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\nError: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\n[Error: ENOENT: no such file or directory, open '/tests/private-sample/artifacts/patched/stripped/approot/dist/node_modules/@signalk/server-admin-ui/public/index.html'] {\n  errno: -2,\n  code: 'ENOENT',\n  syscall: 'open',\n  path: '/tests/private-sample/artifacts/patched/stripped/approot/dist/node_modules/@signalk/server-admin-ui/public/index.html'\n}\nError [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (node:_http_outgoing:700:11)\n    at ServerResponse.header (/tests/private-sample/artifacts/patched/stripped/approot/dist/config/index.bundle.cjs:60681:14)\n    at ServerResponse.contentType (/tests/private-sample/artifacts/patched/stripped/approot/dist/config/index.bundle.cjs:60630:19)\n    at ReadFileContext.callback (/tests/private-sample/artifacts/patched/stripped/approot/dist/config/index.bundle.cjs:379546:15)\n    at FSReqCallback.readFileAfterOpen [as oncomplete] (node:fs:297:13) {\n  code: 'ERR_HTTP_HEADERS_SENT'\n}\n",
+        "result": "not_triggered"
+      }
+    ],
+    "patched/sanitized": [
+      {
+        "passed": true,
+        "binary": "/tests/private-sample/artifacts/patched/sanitized/signalk-server",
+        "repetition": 1,
+        "issues": [],
+        "invocation": [
+          "/usr/bin/python3",
+          "/workspace/out/poc.py",
+          "--binary",
+          "/tests/private-sample/artifacts/patched/sanitized/signalk-server",
+          "--timeout",
+          "30",
+          "--json-out",
+          "/tmp/tmpdmxf54n5.json"
+        ],
+        "poc_returncode": 0,
+        "poc_stdout_tail": "Result written to /tmp/tmpdmxf54n5.json\n",
+        "poc_stderr_tail": "",
+        "observable_kind": "custom",
+        "triggered": false,
+        "config_replaced": false,
+        "import_http": 401,
+        "apply_http": 0,
+        "trace_excerpt": "[SANITIZED] Could not parse security config\n[SANITIZED] ENOENT: no such file or directory, open '/tmp/signalk_config_fzzsyjep/security.json'\n[SANITIZED] Could not parse security config\n[SANITIZED] ENOENT: no such file or directory, open '/tmp/signalk_config_fzzsyjep/security.json'\n[SANITIZED] Could not parse security config\n[SANITIZED] ENOENT: no such file or directory, open '/tmp/signalk_config_fzzsyjep/security.json'\n[SANITIZED] (node:124) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.\n(Use `node --trace-deprecation ...` to show where the warning was created)\n[SANITIZED] Error: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\n[SANITIZED] Error: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\n[SANITIZED] Error: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\n[SANITIZED] Error: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\n[SANITIZED] Error: send EPERM 224.0.0.251:5353\n    at doSend (node:dgram:763:16)\n    at defaultTriggerAsyncIdScope (node:internal/async_hooks:472:18)\n    at afterDns (node:dgram:702:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  errno: -1,\n  code: 'EPERM',\n  syscall: 'send',\n  address: '224.0.0.251',\n  port: 5353\n}\n[SANITIZED] [Error: ENOENT: no such file or directory, open '/tests/private-sample/artifacts/patched/sanitized/approot/dist/node_modules/@signalk/server-admin-ui/public/index.html'] {\n  errno: -2,\n  code: 'ENOENT',\n  syscall: 'open',\n  path: '/tests/private-sample/artifacts/patched/sanitized/approot/dist/node_modules/@signalk/server-admin-ui/public/index.html'\n}\n[SANITIZED-ERROR] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (node:_http_outgoing:700:11)\n    at ServerResponse.header (/tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:60697:14)\n    at ServerResponse.contentType (/tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:60646:19)\n    at ReadFileContext.callback (/tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:379562:15)\n    at FSReqCallback.readFileAfterOpen [as oncomplete] (node:fs:297:13)\n[SANITIZED] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (node:_http_outgoing:700:11)\n    at ServerResponse.header (/tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:60697:14)\n    at ServerResponse.contentType (/tests/private-sample/artifacts/patched/sanitized/approot/dist/config/index.bundle.cjs:60646:19)\n    at ReadFileContext.callback (/tests/private-sample/artifacts/patched/sanitized/approot/dist",
+        "result": "not_triggered"
+      }
+    ]
+  },
+  "issues": [],
+  "error": null
+}

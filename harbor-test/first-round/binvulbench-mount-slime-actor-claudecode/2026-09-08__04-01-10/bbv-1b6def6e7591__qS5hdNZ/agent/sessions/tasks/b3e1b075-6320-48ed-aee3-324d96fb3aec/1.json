@@ -1,0 +1,8 @@
+{
+  "id": "1",
+  "subject": "Analyze the target binary for JWT verification logic",
+  "description": "Examine /workspace/artifacts/target/jwt-verify using strings, static analysis, and behavioral probing to discover the claim validation policy",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

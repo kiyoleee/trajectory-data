@@ -1,0 +1,18 @@
+{
+  "poc_trajectories": {
+    "file_name": "all.jsonl",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "system": "system"
+    },
+    "tags": {
+      "role_tag": "from",
+      "content_tag": "value",
+      "user_tag": "human",
+      "assistant_tag": "gpt",
+      "observation_tag": "tool",
+      "system_tag": "system"
+    }
+  }
+}

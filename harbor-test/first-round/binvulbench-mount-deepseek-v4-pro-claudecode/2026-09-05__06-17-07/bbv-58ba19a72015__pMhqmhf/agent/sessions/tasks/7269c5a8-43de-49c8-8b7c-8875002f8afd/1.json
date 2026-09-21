@@ -1,0 +1,9 @@
+{
+  "id": "1",
+  "subject": "Identify exact exiv2 build (version + commit)",
+  "description": "Pin down which exiv2 release \"1.0.0.9\" corresponds to, to target known CVEs. Use binary strings, features present (webp, bmff, jxl, print -pR availability), and gate date.",
+  "activeForm": "Identifying exiv2 build version",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

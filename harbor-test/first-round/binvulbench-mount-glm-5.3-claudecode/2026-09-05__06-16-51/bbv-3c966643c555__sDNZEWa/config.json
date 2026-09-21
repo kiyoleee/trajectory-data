@@ -1,0 +1,24 @@
+{
+    "task": {
+        "path": "binvulnbench-mount/bbv-3c966643c555",
+        "source": "binvulnbench-mount"
+    },
+    "trial_name": "bbv-3c966643c555__sDNZEWa",
+    "trials_dir": "result/binvulbench-mount-glm-5.3-claudecode/2026-09-05__06-16-51",
+    "agent": {
+        "name": "claude-code",
+        "model_name": "glm-5.3"
+    },
+    "environment": {
+        "type": "docker",
+        "mounts": [
+            {
+                "type": "bind",
+                "source": "/home/liqingyu/.npm-global/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe",
+                "target": "/usr/local/bin/claude",
+                "read_only": true
+            }
+        ]
+    },
+    "job_id": "81f5bcbb-4d75-477e-a1bd-7e83e8236edd"
+}

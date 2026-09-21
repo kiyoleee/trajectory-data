@@ -1,0 +1,9 @@
+{
+  "id": "1",
+  "subject": "Recon target binary behavior",
+  "description": "Identify JasPer 1.900.12 build details, available formats, and observable behaviors",
+  "activeForm": "Reconnoitering target binary",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

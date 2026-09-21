@@ -1,0 +1,9 @@
+{
+  "id": "1",
+  "subject": "Write poc.py harness for signalk-server config import vuln",
+  "description": "Write single-file stdlib-only poc.py implementing start/probe/import-unauth/apply-auth/verify/JSON-contract, save to /workspace/out/poc.py",
+  "activeForm": "Writing poc.py",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

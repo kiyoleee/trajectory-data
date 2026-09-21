@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/tests/private-sample/poc/validator.py", line 219, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/tests/private-sample/poc/validator.py", line 184, in main
+    passed, issues = run_verdict(group, record)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/private-sample/poc/validator.py", line 113, in run_verdict
+    value = str(observable.get("value") or "")
+                ^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+validator exited with status 1

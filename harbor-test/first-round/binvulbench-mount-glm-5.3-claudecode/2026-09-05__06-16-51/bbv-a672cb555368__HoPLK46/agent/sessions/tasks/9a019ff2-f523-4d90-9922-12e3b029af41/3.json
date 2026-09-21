@@ -1,0 +1,9 @@
+{
+  "id": "3",
+  "subject": "Write final /workspace/out/poc.py",
+  "description": "Self-contained script that builds shim+module at runtime into a temp dir next to the target binary layout, starts daemon, sends packet, captures JSON result per contract.",
+  "activeForm": "Writing final poc.py",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

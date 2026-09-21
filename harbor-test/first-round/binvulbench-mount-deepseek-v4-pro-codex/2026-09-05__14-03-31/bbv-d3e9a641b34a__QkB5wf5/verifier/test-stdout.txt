@@ -1,0 +1,70 @@
+{
+  "error": null,
+  "issues": [],
+  "passed": true,
+  "poc": "/workspace/out/poc.py",
+  "repetitions": 1,
+  "runs": {
+    "patched/sanitized": [
+      {
+        "binary": "artifacts/patched/sanitized/s7dl",
+        "issues": [
+          "observable.value does not report the clean rejection evidence"
+        ],
+        "passed": true,
+        "repetition": 1
+      }
+    ],
+    "patched/stripped": [
+      {
+        "binary": "artifacts/patched/stripped/s7dl",
+        "issues": [
+          "observable.value does not report the clean rejection evidence"
+        ],
+        "passed": true,
+        "repetition": 1
+      }
+    ],
+    "patched/unstripped": [
+      {
+        "binary": "artifacts/patched/unstripped/s7dl",
+        "issues": [
+          "observable.value does not report the clean rejection evidence"
+        ],
+        "passed": true,
+        "repetition": 1
+      }
+    ],
+    "vuln/sanitized": [
+      {
+        "binary": "artifacts/vuln/sanitized/s7dl",
+        "issues": [
+          "observable.value does not report the crash evidence"
+        ],
+        "passed": true,
+        "repetition": 1
+      }
+    ],
+    "vuln/stripped": [
+      {
+        "binary": "artifacts/vuln/stripped/s7dl",
+        "issues": [
+          "observable.value does not report the crash evidence"
+        ],
+        "passed": true,
+        "repetition": 1
+      }
+    ],
+    "vuln/unstripped": [
+      {
+        "binary": "artifacts/vuln/unstripped/s7dl",
+        "issues": [
+          "observable.value does not report the crash evidence"
+        ],
+        "passed": true,
+        "repetition": 1
+      }
+    ]
+  },
+  "sample_root": "/tests/private-sample"
+}

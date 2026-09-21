@@ -1,0 +1,151 @@
+{
+    "id": "8d7b7c9a-2b68-4a1b-a601-5c5cfaa1eaca",
+    "task_name": "binvulbench/bbv-d3e9a641b34a",
+    "trial_name": "bbv-d3e9a641b34a__QkB5wf5",
+    "trial_uri": "file:///home/liqingyu/harbor-work/result/binvulbench-mount-deepseek-v4-pro-codex/2026-09-05__14-03-31/bbv-d3e9a641b34a__QkB5wf5",
+    "task_id": {
+        "path": "binvulnbench-mount/bbv-d3e9a641b34a"
+    },
+    "source": "binvulnbench-mount",
+    "task_checksum": "b629dcc0af6b893ec9ddac80fa0e16227be357f3df3ecba3ba7f4e7818389464",
+    "config": {
+        "task": {
+            "path": "binvulnbench-mount/bbv-d3e9a641b34a",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "binvulnbench-mount"
+        },
+        "trial_name": "bbv-d3e9a641b34a__QkB5wf5",
+        "trials_dir": "result/binvulbench-mount-deepseek-v4-pro-codex/2026-09-05__14-03-31",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "codex",
+            "import_path": null,
+            "model_name": "deepseek-v4-pro",
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "env": {
+                "CODEX_STATUS_SHIM": "127.0.0.1:8787"
+            },
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": [
+                {
+                    "type": "bind",
+                    "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex",
+                    "target": "/usr/local/bin/codex",
+                    "read_only": true
+                },
+                {
+                    "type": "bind",
+                    "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-package.json",
+                    "target": "/usr/local/codex-package.json",
+                    "read_only": true
+                },
+                {
+                    "type": "bind",
+                    "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-resources",
+                    "target": "/usr/local/codex-resources",
+                    "read_only": true
+                },
+                {
+                    "type": "bind",
+                    "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path",
+                    "target": "/usr/local/codex-path",
+                    "read_only": true
+                },
+                {
+                    "type": "bind",
+                    "source": "/home/liqingyu/harbor-work/codex_status_shim.py",
+                    "target": "/usr/local/codex_status_shim.py",
+                    "read_only": true
+                }
+            ],
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "6d1674c5-13eb-429b-9291-b7216c507f89",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "codex",
+        "version": "0.153.4",
+        "model_info": {
+            "name": "deepseek-v4-pro",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1416572,
+        "n_cache_tokens": 1248256,
+        "n_output_tokens": 18629,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "verifier_environment_mode": "separate",
+    "exception_info": null,
+    "started_at": "2026-09-05T14:05:00.109329Z",
+    "finished_at": "2026-09-05T14:11:29.806427Z",
+    "environment_setup": {
+        "started_at": "2026-09-05T14:05:00.127041Z",
+        "finished_at": "2026-09-05T14:05:04.681718Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-09-05T14:05:04.681760Z",
+        "finished_at": "2026-09-05T14:05:04.896219Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-09-05T14:05:04.896348Z",
+        "finished_at": "2026-09-05T14:11:00.475575Z"
+    },
+    "verifier": {
+        "started_at": "2026-09-05T14:11:11.729008Z",
+        "finished_at": "2026-09-05T14:11:29.806410Z"
+    },
+    "step_results": null
+}

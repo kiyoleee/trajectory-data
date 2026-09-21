@@ -1,0 +1,60 @@
+{
+    "id": "67ac09f3-22d2-4600-8509-2fb342425303",
+    "started_at": "2026-09-08T04:01:10.525050",
+    "updated_at": "2026-09-08T04:16:12.828905Z",
+    "finished_at": null,
+    "n_total_trials": 14,
+    "stats": {
+        "n_completed_trials": 8,
+        "n_errored_trials": 7,
+        "n_running_trials": 2,
+        "n_pending_trials": 4,
+        "n_cancelled_trials": 2,
+        "n_retries": 0,
+        "evals": {
+            "claude-code__slime-actor__binvulnbench-mount": {
+                "n_trials": 8,
+                "n_errors": 7,
+                "metrics": [
+                    {
+                        "mean": 0.125
+                    }
+                ],
+                "pass_at_k": {},
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "bbv-ea68f1e9b74b__fnVNFZg",
+                            "bbv-3c966643c555__Mpokqc9",
+                            "bbv-d3e9a641b34a__6hxaMSN",
+                            "bbv-5033fb06cd38__SAarVH2",
+                            "bbv-22c3fb03220a__dFoe2vX",
+                            "bbv-2864ea7e3ca0__TRxHXVj",
+                            "bbv-9a92d775ebc9__9DUoVnZ"
+                        ],
+                        "1.0": [
+                            "bbv-1b6def6e7591__qS5hdNZ"
+                        ]
+                    }
+                },
+                "exception_stats": {
+                    "OutputTokenExceededError": [
+                        "bbv-ea68f1e9b74b__fnVNFZg"
+                    ],
+                    "NetworkConnectionError": [
+                        "bbv-3c966643c555__Mpokqc9",
+                        "bbv-d3e9a641b34a__6hxaMSN",
+                        "bbv-5033fb06cd38__SAarVH2",
+                        "bbv-22c3fb03220a__dFoe2vX",
+                        "bbv-2864ea7e3ca0__TRxHXVj",
+                        "bbv-9a92d775ebc9__9DUoVnZ"
+                    ]
+                }
+            }
+        },
+        "n_input_tokens": 10660466,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 64155,
+        "cost_usd": 54.91195499999999
+    }
+}

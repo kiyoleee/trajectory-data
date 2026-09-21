@@ -1,0 +1,24 @@
+{
+    "task": {
+        "path": "binvulnbench-mount/bbv-9a92d775ebc9",
+        "source": "binvulnbench-mount"
+    },
+    "trial_name": "bbv-9a92d775ebc9__sJ4jPEz",
+    "trials_dir": "result/binvulbench-mount-kimi-k3-claudecode/2026-09-05__06-18-07",
+    "agent": {
+        "name": "claude-code",
+        "model_name": "kimi-k3"
+    },
+    "environment": {
+        "type": "docker",
+        "mounts": [
+            {
+                "type": "bind",
+                "source": "/home/liqingyu/.npm-global/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe",
+                "target": "/usr/local/bin/claude",
+                "read_only": true
+            }
+        ]
+    },
+    "job_id": "074a326c-4ae6-4dbf-ae45-b4666fc64344"
+}

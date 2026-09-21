@@ -1,0 +1,9 @@
+{
+  "id": "1",
+  "subject": "Investigate FPE crash trigger conditions in target sudo binary",
+  "description": "Determine the exact PAM/environment conditions under which the statically-linked sudo-rs 0.2.5 binary crashes with SIGFPE (rc 136), and confirm the mandated scenario (comment-only /etc/pam.d/sudo, neutralized other/pam.conf) triggers it.",
+  "activeForm": "Investigating FPE crash conditions",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

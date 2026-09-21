@@ -1,0 +1,117 @@
+{
+    "id": "142f4550-5417-4ec4-b21c-99c7552665fe",
+    "task_name": "binvulbench/bbv-2864ea7e3ca0",
+    "trial_name": "bbv-2864ea7e3ca0__HQ5pUYd",
+    "trial_uri": "file:///home/liqingyu/harbor-work/result/binvulbench-mount-slime-actor-claudecode/2026-09-08__03-43-45/bbv-2864ea7e3ca0__HQ5pUYd",
+    "task_id": {
+        "path": "binvulnbench-mount/bbv-2864ea7e3ca0"
+    },
+    "source": "binvulnbench-mount",
+    "task_checksum": "dd93c2e9c21e992c39f7ab9ba3fd1a51a0c6499eddba26d60228c1fc8afed410",
+    "config": {
+        "task": {
+            "path": "binvulnbench-mount/bbv-2864ea7e3ca0",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "binvulnbench-mount"
+        },
+        "trial_name": "bbv-2864ea7e3ca0__HQ5pUYd",
+        "trials_dir": "result/binvulbench-mount-slime-actor-claudecode/2026-09-08__03-43-45",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "slime-actor",
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": [
+                {
+                    "type": "bind",
+                    "source": "/home/liqingyu/.npm-global/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe",
+                    "target": "/usr/local/bin/claude",
+                    "read_only": true
+                }
+            ],
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "6d98ac7b-2d51-42fe-9876-1f22badf94a9",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.263",
+        "model_info": {
+            "name": "slime-actor",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": null,
+    "verifier_environment_mode": "separate",
+    "exception_info": null,
+    "started_at": "2026-09-08T03:51:15.604808Z",
+    "finished_at": "2026-09-08T03:52:05.469347Z",
+    "environment_setup": {
+        "started_at": "2026-09-08T03:51:15.685051Z",
+        "finished_at": "2026-09-08T03:51:20.270741Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-09-08T03:51:20.270785Z",
+        "finished_at": "2026-09-08T03:51:20.491926Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-09-08T03:51:20.492047Z",
+        "finished_at": "2026-09-08T03:52:03.385198Z"
+    },
+    "verifier": null,
+    "step_results": null
+}

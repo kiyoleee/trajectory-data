@@ -1,0 +1,108 @@
+{
+  "args": {
+    "input": "first-round",
+    "output": "sharegpt_clean",
+    "bench": "binvulbench-mount-gpt-5.5-codex",
+    "min_reward": 1.0,
+    "all_benches": false
+  },
+  "runs_seen": 14,
+  "dropped_reward": 5,
+  "dropped_error": 0,
+  "converted": 9,
+  "global_stats": {
+    "user_steps_dropped_as_runtime_noise": 9,
+    "user_steps_folded_into_task": 0,
+    "human_messages": 9,
+    "gpt_messages": 89,
+    "function_call_messages": 176,
+    "observations_total_chars": 194804,
+    "observation_messages": 176,
+    "observations_codex_truncated": 2,
+    "observations_we_truncated": 36,
+    "messages_total_chars": 442860
+  },
+  "per_record": [
+    {
+      "task_id": "bbv-1b6def6e7591",
+      "num_messages": 45,
+      "num_function_calls": 18,
+      "messages_total_chars": 44829,
+      "observations_codex_truncated": 2,
+      "observations_we_truncated": 3,
+      "observations_total_chars": 14752
+    },
+    {
+      "task_id": "bbv-2864ea7e3ca0",
+      "num_messages": 56,
+      "num_function_calls": 21,
+      "messages_total_chars": 49785,
+      "observations_codex_truncated": 0,
+      "observations_we_truncated": 4,
+      "observations_total_chars": 19834
+    },
+    {
+      "task_id": "bbv-2ec5413a2b8e",
+      "num_messages": 69,
+      "num_function_calls": 27,
+      "messages_total_chars": 60946,
+      "observations_codex_truncated": 0,
+      "observations_we_truncated": 4,
+      "observations_total_chars": 26363
+    },
+    {
+      "task_id": "bbv-3c966643c555",
+      "num_messages": 43,
+      "num_function_calls": 17,
+      "messages_total_chars": 53112,
+      "observations_codex_truncated": 0,
+      "observations_we_truncated": 2,
+      "observations_total_chars": 15416
+    },
+    {
+      "task_id": "bbv-5033fb06cd38",
+      "num_messages": 27,
+      "num_function_calls": 10,
+      "messages_total_chars": 17846,
+      "observations_codex_truncated": 0,
+      "observations_we_truncated": 0,
+      "observations_total_chars": 1694
+    },
+    {
+      "task_id": "bbv-9a92d775ebc9",
+      "num_messages": 51,
+      "num_function_calls": 19,
+      "messages_total_chars": 31170,
+      "observations_codex_truncated": 0,
+      "observations_we_truncated": 1,
+      "observations_total_chars": 8048
+    },
+    {
+      "task_id": "bbv-d3e9a641b34a",
+      "num_messages": 72,
+      "num_function_calls": 30,
+      "messages_total_chars": 71627,
+      "observations_codex_truncated": 0,
+      "observations_we_truncated": 11,
+      "observations_total_chars": 48566
+    },
+    {
+      "task_id": "bbv-ea68f1e9b74b",
+      "num_messages": 65,
+      "num_function_calls": 26,
+      "messages_total_chars": 97321,
+      "observations_codex_truncated": 0,
+      "observations_we_truncated": 11,
+      "observations_total_chars": 57922
+    },
+    {
+      "task_id": "bbv-f050dfd3a6c5",
+      "num_messages": 22,
+      "num_function_calls": 8,
+      "messages_total_chars": 16224,
+      "observations_codex_truncated": 0,
+      "observations_we_truncated": 0,
+      "observations_total_chars": 2209
+    }
+  ]
+}

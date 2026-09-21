@@ -1,0 +1,71 @@
+{
+  "passed": false,
+  "runs": {
+    "vuln/unstripped": [
+      {
+        "passed": false,
+        "reason": "vulnerable binary exited cleanly without crash or corruption",
+        "returncode": 0,
+        "signal": null,
+        "timed_out": false,
+        "runtime_ms": 1,
+        "observable_snippet": "HTTP 204 No Content body was written to the output file; expected_empty=true; actual_hex=41; actual_size=1"
+      }
+    ],
+    "vuln/stripped": [
+      {
+        "passed": false,
+        "reason": "vulnerable binary exited cleanly without crash or corruption",
+        "returncode": 0,
+        "signal": null,
+        "timed_out": false,
+        "runtime_ms": 1,
+        "observable_snippet": "HTTP 204 No Content body was written to the output file; expected_empty=true; actual_hex=41; actual_size=1"
+      }
+    ],
+    "vuln/sanitized": [
+      {
+        "passed": false,
+        "reason": "vulnerable binary exited cleanly without crash or corruption",
+        "returncode": 0,
+        "signal": null,
+        "timed_out": false,
+        "runtime_ms": 7,
+        "observable_snippet": "HTTP 204 No Content body was written to the output file; expected_empty=true; actual_hex=41; actual_size=1"
+      }
+    ],
+    "patched/unstripped": [
+      {
+        "passed": false,
+        "reason": "patched binary did not print bad chunk length \u2014 fix not working",
+        "returncode": 0,
+        "signal": null,
+        "timed_out": false,
+        "runtime_ms": 1,
+        "observable_snippet": "HTTP 204 No Content body was written to the output file; expected_empty=true; actual_hex=41; actual_size=1"
+      }
+    ],
+    "patched/stripped": [
+      {
+        "passed": false,
+        "reason": "patched binary did not print bad chunk length \u2014 fix not working",
+        "returncode": 0,
+        "signal": null,
+        "timed_out": false,
+        "runtime_ms": 2,
+        "observable_snippet": "HTTP 204 No Content body was written to the output file; expected_empty=true; actual_hex=41; actual_size=1"
+      }
+    ],
+    "patched/sanitized": [
+      {
+        "passed": false,
+        "reason": "patched binary did not print bad chunk length \u2014 fix not working",
+        "returncode": 0,
+        "signal": null,
+        "timed_out": false,
+        "runtime_ms": 7,
+        "observable_snippet": "HTTP 204 No Content body was written to the output file; expected_empty=true; actual_hex=41; actual_size=1"
+      }
+    ]
+  }
+}

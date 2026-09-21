@@ -1,0 +1,9 @@
+{
+  "id": "1",
+  "subject": "Run target with minimal config and probe PFCP listener",
+  "description": "Run the upf binary with the minimal config, confirm it listens on 127.0.0.1:8805, and build PFCP probes (Association Setup Request, Session Establishment, malformed datagrams) to explore input handling.",
+  "activeForm": "Running target and building PFCP probe",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

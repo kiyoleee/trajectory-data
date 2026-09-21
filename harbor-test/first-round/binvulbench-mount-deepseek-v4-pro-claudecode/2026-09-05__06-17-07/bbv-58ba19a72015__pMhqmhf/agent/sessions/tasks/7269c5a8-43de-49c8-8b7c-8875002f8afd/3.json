@@ -1,0 +1,9 @@
+{
+  "id": "3",
+  "subject": "Write and validate poc.py",
+  "description": "Write /workspace/out/poc.py that dynamically constructs the trigger, drives the binary, and emits the required JSON contract. Validate against the target binary.",
+  "activeForm": "Writing and validating poc.py",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

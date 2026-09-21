@@ -1,0 +1,9 @@
+{
+  "id": "3",
+  "subject": "Test poc.py against target",
+  "description": "Run poc.py against /workspace/artifacts/target/exiv2, verify crash evidence and JSON contract validity.",
+  "activeForm": "Testing poc.py",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

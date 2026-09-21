@@ -1,0 +1,42 @@
+{
+    "task": {
+        "path": "binvulnbench-mount/bbv-ea68f1e9b74b",
+        "source": "binvulnbench-mount"
+    },
+    "trial_name": "bbv-ea68f1e9b74b__XHZVLxv",
+    "trials_dir": "result/binvulbench-mount-glm-5.3-codex/2026-09-05__06-16-59",
+    "agent": {
+        "name": "codex",
+        "model_name": "glm-5.3"
+    },
+    "environment": {
+        "type": "docker",
+        "mounts": [
+            {
+                "type": "bind",
+                "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex",
+                "target": "/usr/local/bin/codex",
+                "read_only": true
+            },
+            {
+                "type": "bind",
+                "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-package.json",
+                "target": "/usr/local/codex-package.json",
+                "read_only": true
+            },
+            {
+                "type": "bind",
+                "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-resources",
+                "target": "/usr/local/codex-resources",
+                "read_only": true
+            },
+            {
+                "type": "bind",
+                "source": "/home/liqingyu/.npm-global/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path",
+                "target": "/usr/local/codex-path",
+                "read_only": true
+            }
+        ]
+    },
+    "job_id": "b309d3bd-24f7-4e8a-9944-b23fe2dc5d26"
+}

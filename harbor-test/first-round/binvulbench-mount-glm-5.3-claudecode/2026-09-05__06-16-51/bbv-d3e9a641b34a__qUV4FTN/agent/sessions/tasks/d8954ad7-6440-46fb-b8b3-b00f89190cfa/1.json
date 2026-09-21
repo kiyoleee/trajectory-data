@@ -1,0 +1,9 @@
+{
+  "id": "1",
+  "subject": "Probe binary to find crash trigger",
+  "description": "Map out the s7dl trigger-file semantics: which (start, size, buff_len) combos are accepted vs rejected, and find the combo that produces SIGSEGV.",
+  "activeForm": "Probing binary behavior",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

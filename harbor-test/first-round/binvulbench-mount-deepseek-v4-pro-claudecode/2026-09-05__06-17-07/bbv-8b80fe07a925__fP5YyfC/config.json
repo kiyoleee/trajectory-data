@@ -1,0 +1,24 @@
+{
+    "task": {
+        "path": "binvulnbench-mount/bbv-8b80fe07a925",
+        "source": "binvulnbench-mount"
+    },
+    "trial_name": "bbv-8b80fe07a925__fP5YyfC",
+    "trials_dir": "result/binvulbench-mount-deepseek-v4-pro-claudecode/2026-09-05__06-17-07",
+    "agent": {
+        "name": "claude-code",
+        "model_name": "deepseek-v4-pro"
+    },
+    "environment": {
+        "type": "docker",
+        "mounts": [
+            {
+                "type": "bind",
+                "source": "/home/liqingyu/.npm-global/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe",
+                "target": "/usr/local/bin/claude",
+                "read_only": true
+            }
+        ]
+    },
+    "job_id": "0bd50b76-88af-4953-a217-1682f53beb4f"
+}

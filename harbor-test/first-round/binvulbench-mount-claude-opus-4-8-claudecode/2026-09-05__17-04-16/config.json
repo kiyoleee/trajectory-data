@@ -1,0 +1,26 @@
+{
+    "jobs_dir": "result/binvulbench-mount-claude-opus-4-8-claudecode",
+    "n_concurrent_trials": 2,
+    "environment": {
+        "type": "docker",
+        "mounts": [
+            {
+                "type": "bind",
+                "source": "/home/liqingyu/.npm-global/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe",
+                "target": "/usr/local/bin/claude",
+                "read_only": true
+            }
+        ]
+    },
+    "agents": [
+        {
+            "name": "claude-code",
+            "model_name": "claude-opus-4-8"
+        }
+    ],
+    "datasets": [
+        {
+            "path": "binvulnbench-mount"
+        }
+    ]
+}

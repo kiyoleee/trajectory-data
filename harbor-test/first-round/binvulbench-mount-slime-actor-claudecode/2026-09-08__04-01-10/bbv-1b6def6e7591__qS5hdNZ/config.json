@@ -1,0 +1,24 @@
+{
+    "task": {
+        "path": "binvulnbench-mount/bbv-1b6def6e7591",
+        "source": "binvulnbench-mount"
+    },
+    "trial_name": "bbv-1b6def6e7591__qS5hdNZ",
+    "trials_dir": "result/binvulbench-mount-slime-actor-claudecode/2026-09-08__04-01-10",
+    "agent": {
+        "name": "claude-code",
+        "model_name": "slime-actor"
+    },
+    "environment": {
+        "type": "docker",
+        "mounts": [
+            {
+                "type": "bind",
+                "source": "/home/liqingyu/.npm-global/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe",
+                "target": "/usr/local/bin/claude",
+                "read_only": true
+            }
+        ]
+    },
+    "job_id": "67ac09f3-22d2-4600-8509-2fb342425303"
+}

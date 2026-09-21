@@ -1,0 +1,9 @@
+{
+  "id": "3",
+  "subject": "Write /workspace/out/poc.py per JSON contract",
+  "description": "Single-file poc.py: generates config, starts daemon with correct cwd, waits for UDP 1701 bind, sends dynamic payload, collects JSON result. Only stdlib, no hardcoded absolute paths.",
+  "activeForm": "Writing poc.py",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

@@ -1,0 +1,9 @@
+{
+  "id": "2",
+  "subject": "Verify poc.py end-to-end",
+  "description": "Run poc.py against /workspace/artifacts/target/goshs repeatedly; verify JSON contract keys, transcript completeness, exit code, cleanup, and determinism.",
+  "activeForm": "Verifying poc.py",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}
