@@ -1,0 +1,173 @@
+{
+  "source_file": "F:\\AAAProject\\ZGCA\\trajectory-data\\sharegpt_clean-26-09-21\\binvulbench-mount-gpt-5.5-codex.sharegpt.jsonl",
+  "output_file": "C:\\Users\\qyfy6\\Documents\\Codex\\2026-09-21\\referenced-chatgpt-conversation-this-is-an\\outputs\\sharegpt_clean-26-09-21\\binvulbench-mount-gpt-5.5-codex.sharegpt.jsonl",
+  "postprocess": {
+    "name": "interleave_function_call_observation",
+    "version": 1,
+    "description": "Consecutive function_call blocks and following observation blocks are paired in order. Pre-tool gpt progress messages are dropped to satisfy strict LlamaFactory ShareGPT alternation."
+  },
+  "samples": 9,
+  "messages_before": 450,
+  "messages_after": 370,
+  "dropped_pre_tool_gpt": 80,
+  "strict_alternating_failures": 0,
+  "bad_function_call_json": 0,
+  "bad_function_call_shape": 0,
+  "role_counts_after": {
+    "human": 9,
+    "function_call": 176,
+    "observation": 176,
+    "gpt": 9
+  },
+  "function_names_after": {
+    "exec_command": 154,
+    "apply_patch": 15,
+    "write_stdin": 7
+  },
+  "meta_fields_dropped": [
+    "run_dir",
+    "session_id",
+    "total_completion_tokens",
+    "total_cost_usd",
+    "total_prompt_tokens"
+  ],
+  "distributions_after": {
+    "messages_per_sample": {
+      "min": 18,
+      "p50": 40.0,
+      "p90": 57.2,
+      "p95": 59.599999999999994,
+      "p99": 61.519999999999996,
+      "max": 62,
+      "mean": 41.111111111111114
+    },
+    "chars_human": {
+      "min": 4015,
+      "p50": 5557.0,
+      "p90": 9415.2,
+      "p95": 9569.6,
+      "p99": 9693.12,
+      "max": 9724,
+      "mean": 6216.888888888889
+    },
+    "chars_gpt": {
+      "min": 337,
+      "p50": 454.0,
+      "p90": 658.2,
+      "p95": 696.5999999999999,
+      "p99": 727.3199999999999,
+      "max": 735,
+      "mean": 472.77777777777777
+    },
+    "chars_function_call": {
+      "min": 123,
+      "p50": 220.0,
+      "p90": 1347.5,
+      "p95": 3647.75,
+      "p99": 11756.5,
+      "max": 15200,
+      "mean": 841.8920454545455
+    },
+    "chars_observation": {
+      "min": 13,
+      "p50": 279.0,
+      "p90": 3632.0,
+      "p95": 3633.0,
+      "p99": 3633.0,
+      "max": 3752,
+      "mean": 1106.840909090909
+    }
+  },
+  "per_record": [
+    {
+      "line": 1,
+      "task_id": "bbv-1b6def6e7591",
+      "num_messages_before": 45,
+      "num_messages_after": 38,
+      "num_function_calls": 18,
+      "num_observations": 18,
+      "num_gpt_messages": 1,
+      "strict_alternating": true
+    },
+    {
+      "line": 2,
+      "task_id": "bbv-2864ea7e3ca0",
+      "num_messages_before": 56,
+      "num_messages_after": 44,
+      "num_function_calls": 21,
+      "num_observations": 21,
+      "num_gpt_messages": 1,
+      "strict_alternating": true
+    },
+    {
+      "line": 3,
+      "task_id": "bbv-2ec5413a2b8e",
+      "num_messages_before": 69,
+      "num_messages_after": 56,
+      "num_function_calls": 27,
+      "num_observations": 27,
+      "num_gpt_messages": 1,
+      "strict_alternating": true
+    },
+    {
+      "line": 4,
+      "task_id": "bbv-3c966643c555",
+      "num_messages_before": 43,
+      "num_messages_after": 36,
+      "num_function_calls": 17,
+      "num_observations": 17,
+      "num_gpt_messages": 1,
+      "strict_alternating": true
+    },
+    {
+      "line": 5,
+      "task_id": "bbv-5033fb06cd38",
+      "num_messages_before": 27,
+      "num_messages_after": 22,
+      "num_function_calls": 10,
+      "num_observations": 10,
+      "num_gpt_messages": 1,
+      "strict_alternating": true
+    },
+    {
+      "line": 6,
+      "task_id": "bbv-9a92d775ebc9",
+      "num_messages_before": 51,
+      "num_messages_after": 40,
+      "num_function_calls": 19,
+      "num_observations": 19,
+      "num_gpt_messages": 1,
+      "strict_alternating": true
+    },
+    {
+      "line": 7,
+      "task_id": "bbv-d3e9a641b34a",
+      "num_messages_before": 72,
+      "num_messages_after": 62,
+      "num_function_calls": 30,
+      "num_observations": 30,
+      "num_gpt_messages": 1,
+      "strict_alternating": true
+    },
+    {
+      "line": 8,
+      "task_id": "bbv-ea68f1e9b74b",
+      "num_messages_before": 65,
+      "num_messages_after": 54,
+      "num_function_calls": 26,
+      "num_observations": 26,
+      "num_gpt_messages": 1,
+      "strict_alternating": true
+    },
+    {
+      "line": 9,
+      "task_id": "bbv-f050dfd3a6c5",
+      "num_messages_before": 22,
+      "num_messages_after": 18,
+      "num_function_calls": 8,
+      "num_observations": 8,
+      "num_gpt_messages": 1,
+      "strict_alternating": true
+    }
+  ]
+}
