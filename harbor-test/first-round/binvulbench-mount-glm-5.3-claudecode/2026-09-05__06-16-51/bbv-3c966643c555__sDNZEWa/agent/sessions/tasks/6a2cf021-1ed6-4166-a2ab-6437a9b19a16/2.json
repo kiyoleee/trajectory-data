@@ -1,9 +1,0 @@
-{
-  "id": "2",
-  "subject": "Write final poc.py with JSON contract",
-  "description": "Single-file script at /workspace/out/poc.py implementing the full contract: keygen, sign baseline, build crafted message, verify both, emit JSON.",
-  "activeForm": "Writing poc.py",
-  "status": "completed",
-  "blocks": [],
-  "blockedBy": []
-}

@@ -1,9 +1,0 @@
-{
-  "id": "1",
-  "subject": "Identify vulnerable code paths in JasPer 1.900.11 jpc decoder",
-  "description": "Reverse the binary's JPC marker-segment parsing (SIZ/COD/QCD/COC/QCC/SOT/SOD/POC/RGN/PPM/PPT) and shortlist concrete 1.900.11 crash sites reachable via crafted codestream fields.",
-  "activeForm": "Mapping JPC marker parser attack surface",
-  "status": "completed",
-  "blocks": [],
-  "blockedBy": []
-}

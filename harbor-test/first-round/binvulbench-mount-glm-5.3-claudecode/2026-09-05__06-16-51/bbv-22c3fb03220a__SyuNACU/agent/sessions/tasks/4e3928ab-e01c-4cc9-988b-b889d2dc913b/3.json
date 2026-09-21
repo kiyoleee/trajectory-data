@@ -1,9 +1,0 @@
-{
-  "id": "3",
-  "subject": "Write and verify poc.py",
-  "description": "Write /workspace/out/poc.py implementing the JSON contract, test it repeatedly for determinism",
-  "activeForm": "Writing poc.py",
-  "status": "completed",
-  "blocks": [],
-  "blockedBy": []
-}

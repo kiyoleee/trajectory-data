@@ -1,9 +1,0 @@
-{
-  "id": "2",
-  "subject": "Write the poc.py script",
-  "description": "Write the poc.py script that generates a minimal L2TP config, starts the daemon, sends a crafted malicious UDP packet, and captures the crash",
-  "activeForm": "Writing poc.py script",
-  "status": "completed",
-  "blocks": [],
-  "blockedBy": []
-}

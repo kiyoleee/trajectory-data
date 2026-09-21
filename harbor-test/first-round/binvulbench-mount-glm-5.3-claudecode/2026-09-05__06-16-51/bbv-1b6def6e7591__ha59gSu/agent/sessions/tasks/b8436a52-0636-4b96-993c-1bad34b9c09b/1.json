@@ -1,9 +1,0 @@
-{
-  "id": "1",
-  "subject": "Write poc.py with dynamic discovery and JSON contract",
-  "description": "Write /workspace/out/poc.py: runtime discovery of iss claim policy via probes, deterministic selection of array-form iss token, final run + JSON contract output.",
-  "activeForm": "Writing poc.py",
-  "status": "completed",
-  "blocks": [],
-  "blockedBy": []
-}

@@ -1,9 +1,0 @@
-{
-  "id": "2",
-  "subject": "Validate poc.py against target exiv2",
-  "description": "Run python3 /workspace/out/poc.py --binary /workspace/artifacts/target/exiv2 --json-out /workspace/out/result.json and verify the JSON contract exactly.",
-  "activeForm": "Validating poc.py",
-  "status": "completed",
-  "blocks": [],
-  "blockedBy": []
-}

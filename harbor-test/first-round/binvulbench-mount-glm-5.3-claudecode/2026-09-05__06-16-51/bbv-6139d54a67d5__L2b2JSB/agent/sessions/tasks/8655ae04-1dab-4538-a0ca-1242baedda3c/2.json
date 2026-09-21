@@ -1,9 +1,0 @@
-{
-  "id": "2",
-  "subject": "Write and verify /workspace/out/poc.py",
-  "description": "Write single-file poc.py implementing CLI (--binary, --json-out, --timeout), loopback single-connection bounded HTTP server, dynamic payload, subprocess invocation [binary, wget, -O, file, url], signal detection, JSON contract, temp-dir cleanup. Verify reproducibility 3+ runs.",
-  "activeForm": "Writing /workspace/out/poc.py",
-  "status": "pending",
-  "blocks": [],
-  "blockedBy": []
-}

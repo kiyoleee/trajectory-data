@@ -1,9 +1,0 @@
-{
-  "id": "2",
-  "subject": "Write poc.py driver at /workspace/out/poc.py",
-  "description": "Write the single-file Python driver satisfying the JSON contract, generating the trigger dynamically, running the target with timeout, capturing evidence.",
-  "activeForm": "Writing poc.py driver",
-  "status": "in_progress",
-  "blocks": [],
-  "blockedBy": []
-}

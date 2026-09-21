@@ -1,9 +1,0 @@
-{
-  "id": "2",
-  "subject": "Write poc.py with JSON contract",
-  "description": "Write /workspace/out/poc.py that dynamically builds the trigger header + buffer, runs the binary, and emits the required JSON contract.",
-  "activeForm": "Writing poc.py",
-  "status": "completed",
-  "blocks": [],
-  "blockedBy": []
-}

@@ -1,8 +1,0 @@
-{
-  "id": "2",
-  "subject": "Discover JWT claim validation policy via strings",
-  "description": "Run strings/objdump/readelf on the binary to find embedded configuration about which claims are validated and what values are accepted",
-  "status": "completed",
-  "blocks": [],
-  "blockedBy": []
-}

@@ -1,9 +1,0 @@
-{
-  "id": "1",
-  "subject": "Set up runtime environment for accel-pppd (libtriton, libpcre stubs, module)",
-  "description": "The target binary /workspace/artifacts/target/accel-pppd needs libtriton.so and libpcre.so.3 which don't exist on the system. Build stub/functional libraries so the daemon can start, load an l2tp module, and bind UDP 1701.",
-  "activeForm": "Setting up runtime environment",
-  "status": "in_progress",
-  "blocks": [],
-  "blockedBy": []
-}

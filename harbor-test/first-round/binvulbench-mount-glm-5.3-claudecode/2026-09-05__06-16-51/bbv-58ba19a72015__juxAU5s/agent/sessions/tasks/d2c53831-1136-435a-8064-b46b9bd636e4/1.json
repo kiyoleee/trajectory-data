@@ -1,9 +1,0 @@
-{
-  "id": "1",
-  "subject": "Write poc.py with full JSON contract",
-  "description": "Write /workspace/out/poc.py with --binary/--json-out/--timeout interface, dynamic input construction in self-owned temp dir, subprocess with timeout, exact JSON output contract (binary, command, returncode, signal, timed_out, runtime_ms, stdout, stderr, observable{kind,value,path}, error).",
-  "activeForm": "Writing poc.py",
-  "status": "completed",
-  "blocks": [],
-  "blockedBy": []
-}

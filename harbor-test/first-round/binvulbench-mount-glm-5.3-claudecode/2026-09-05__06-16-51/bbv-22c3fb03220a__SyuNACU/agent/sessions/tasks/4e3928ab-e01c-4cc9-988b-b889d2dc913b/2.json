@@ -1,9 +1,0 @@
-{
-  "id": "2",
-  "subject": "Develop trigger payload",
-  "description": "Construct malformed images in-memory (JPC/JP2/BMP/RAS/PNM/MIF) and find one that crashes the target binary",
-  "activeForm": "Developing trigger payload",
-  "status": "completed",
-  "blocks": [],
-  "blockedBy": []
-}

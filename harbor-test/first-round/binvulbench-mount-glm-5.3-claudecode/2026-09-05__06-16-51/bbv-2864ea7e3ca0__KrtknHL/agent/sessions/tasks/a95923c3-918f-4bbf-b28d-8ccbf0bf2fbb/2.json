@@ -1,9 +1,0 @@
-{
-  "id": "2",
-  "subject": "Write poc.py with JSON contract",
-  "description": "Implement the single-file Python PoC driver meeting the CLI and JSON contract, deliver to /workspace/out/poc.py, and validate the output JSON.",
-  "activeForm": "Writing and validating poc.py",
-  "status": "completed",
-  "blocks": [],
-  "blockedBy": []
-}

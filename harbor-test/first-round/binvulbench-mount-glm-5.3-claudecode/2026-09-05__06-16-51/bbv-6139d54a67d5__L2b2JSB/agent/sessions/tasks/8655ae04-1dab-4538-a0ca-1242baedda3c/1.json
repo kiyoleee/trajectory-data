@@ -1,9 +1,0 @@
-{
-  "id": "1",
-  "subject": "Probe wget redirect/FTP paths for injected defect",
-  "description": "Continue targeted probing of busybox wget: multi-hop redirects with @-stripping/memmove paths, FTP-path PASV parser, decodeString on Location, header-boundary splits. Goal: find a signal/hang/anomaly.",
-  "activeForm": "Probing wget redirect/FTP paths",
-  "status": "in_progress",
-  "blocks": [],
-  "blockedBy": []
-}

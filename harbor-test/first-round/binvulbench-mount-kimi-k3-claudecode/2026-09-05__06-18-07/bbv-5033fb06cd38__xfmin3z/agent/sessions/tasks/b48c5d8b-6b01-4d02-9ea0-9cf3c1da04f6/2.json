@@ -1,9 +1,0 @@
-{
-  "id": "2",
-  "subject": "Write /workspace/out/poc.py implementing the scenario and JSON contract",
-  "description": "Single-file Python 3 PoC: create users, write /etc/sudoers-rs (0440), write comment-only PAM files, install setuid copy, run `<tool> -l -U victim` as invoker, capture output, emit JSON contract with observable/returncode/signal fields. Idempotent, deterministic, bounded.",
-  "activeForm": "Writing poc.py",
-  "status": "completed",
-  "blocks": [],
-  "blockedBy": []
-}

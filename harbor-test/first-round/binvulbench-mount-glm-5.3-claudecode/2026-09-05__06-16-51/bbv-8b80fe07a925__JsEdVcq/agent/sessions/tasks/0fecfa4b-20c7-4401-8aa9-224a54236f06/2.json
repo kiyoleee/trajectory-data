@@ -1,9 +1,0 @@
-{
-  "id": "2",
-  "subject": "Construct codestream that triggers a fault",
-  "description": "Build a minimal-but-valid SOC/SIZ/COD/QCD/SOT/SOD/EOI skeleton, then mutate candidate fields (tile indices, component indices, RGN/PPM lengths, numlayers, etc.) to trigger a segfault or assert.",
-  "activeForm": "Constructing crash-triggering codestream",
-  "status": "completed",
-  "blocks": [],
-  "blockedBy": []
-}

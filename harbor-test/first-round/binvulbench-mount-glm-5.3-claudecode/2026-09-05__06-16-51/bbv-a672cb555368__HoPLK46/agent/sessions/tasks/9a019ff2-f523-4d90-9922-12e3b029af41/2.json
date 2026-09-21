@@ -1,9 +1,0 @@
-{
-  "id": "2",
-  "subject": "Find crash trigger packet for l2tp module",
-  "description": "With daemon running on UDP 1701, send crafted L2TP packets to trigger a memory-safety fault in the module (recycled known accel-ppp l2tp vulnerabilities).",
-  "activeForm": "Finding crash trigger packet",
-  "status": "in_progress",
-  "blocks": [],
-  "blockedBy": []
-}

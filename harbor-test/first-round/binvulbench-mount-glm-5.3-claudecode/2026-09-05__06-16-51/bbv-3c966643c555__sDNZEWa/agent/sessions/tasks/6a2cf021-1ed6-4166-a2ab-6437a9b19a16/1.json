@@ -1,9 +1,0 @@
-{
-  "id": "1",
-  "subject": "Build crafted message via compressed-packet trick",
-  "description": "Wrap OPS + (literal payload + baseline signature) inside a CompressedData packet, armor it, and verify it reports verified:true while returning the embedded payload.",
-  "activeForm": "Building compressed-packet crafted message",
-  "status": "completed",
-  "blocks": [],
-  "blockedBy": []
-}

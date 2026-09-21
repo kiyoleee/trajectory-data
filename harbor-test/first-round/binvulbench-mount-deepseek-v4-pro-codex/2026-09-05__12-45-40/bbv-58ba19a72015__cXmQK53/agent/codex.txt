@@ -1,7 +1,0 @@
-WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir "/tmp" (codex_home: AbsolutePathBuf("/tmp/codex-home"))
-Reading additional input from stdin...
-{"type":"thread.started","thread_id":"01a0719f-f6c2-7061-bea6-8c8715bfdb5a"}
-{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Model metadata for `deepseek-v4-pro` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."}}
-{"type":"turn.started"}
-{"type":"error","message":"{\"error\":{\"message\":\"json: unknown field \\\"summary\\\" Request id: 0217886127051680b63b37cbca791937f2f41fb0469576d5ba685\",\"type\":\"BadRequest\",\"param\":\"\",\"code\":\"InvalidParameter\"}}"}
-{"type":"turn.failed","error":{"message":"{\"error\":{\"message\":\"json: unknown field \\\"summary\\\" Request id: 0217886127051680b63b37cbca791937f2f41fb0469576d5ba685\",\"type\":\"BadRequest\",\"param\":\"\",\"code\":\"InvalidParameter\"}}"}}

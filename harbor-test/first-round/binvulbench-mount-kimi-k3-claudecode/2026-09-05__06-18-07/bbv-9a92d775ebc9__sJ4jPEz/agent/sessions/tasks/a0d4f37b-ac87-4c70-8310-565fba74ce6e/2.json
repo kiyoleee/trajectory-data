@@ -1,9 +1,0 @@
-{
-  "id": "2",
-  "subject": "Verify poc.py against target curl",
-  "description": "Run with /workspace/artifacts/target/curl, validate JSON contract, transcript content, determinism, timeout path, and cleanup.",
-  "activeForm": "Verifying poc.py",
-  "status": "completed",
-  "blocks": [],
-  "blockedBy": []
-}

@@ -1,9 +1,0 @@
-{
-  "id": "1",
-  "subject": "Create libtriton.so shim to run stripped accel-pppd",
-  "description": "Build libtriton.so (assembly) exporting all triton/mempool/conf/pcre symbols accel-pppd imports, with a minimal config parser + event loop + module loader, and stub libpcre.so.3. Then build l2tp.so module.",
-  "activeForm": "Building libtriton.so shim",
-  "status": "completed",
-  "blocks": [],
-  "blockedBy": []
-}
